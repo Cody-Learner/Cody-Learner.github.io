@@ -1,0 +1,62 @@
+<body bgcolor="#002B36">
+<font color="#6E8992">
+<pre>
+<font color="#FFFFFF">[cody@Arch2014p9 ~]$ </font>aurt -h
+
+  Usage: aurt &lt;operation&gt; [AUR package name]
+
+  Operations:
+ -S   : Install and or update package.
+ -Sf  : Force install and or update package.
+ -Syu : Update all AUR packages via aurweb RPC.
+ -Ss  : Search for package using various listed methods.
+ -R   : Remove package and info. 
+ -Qu  : Query via aurweb RPC update status and print results.
+ -Vc  : VCS - Check via makepkg, for updates, print and generate file.
+ -Vu  : VCS - Update AUR packages based on file generated from -Vc.
+ -pd  : Package dependency details.
+ -pf  : Package files list.
+ -pi  : Package information.
+ -p   : Pacman.log.
+ -h   : help, this page.
+
+
+  Overview:
+ -S   Build and install package/s via aursync and pacman.
+ -Sf  Same as above except aursync --force and pacman -S --force
+ -Syu Update all AUR packages via aursync -u.
+ -Ss  Search for package via pacsearch, aursearch -P, aursearch -Fv, pacman -Sii
+ -R   Performs pacman -Rns on package and deletes related files, dir&apos;s in ~/z-AUR-Aurt.git/.
+ -Qu  Display list of AUR package update status via aurcheck -ad aur.
+ -Vc  Generate AUR packages update report and list via makepkg -so and makepkg --printsrcinfo.
+ -Vu  Update based on list generated from last running of aurt -Vc.
+ -pd  Display details on package dependencies installed or not via aurchain, aurchain -a, and pacman -T.
+ -pf  Display list of files belonging to package.
+ -p   Display pacman log file.
+ -h   Display this help page.
+
+
+:: Want to read Updating AUR packages info?      yes/no (5 sec timeout to no)
+
+<font color="#55FFFF"><b> Updating AUR package: </b></font>
+ Aurt has two methods available for updating all installed AUR packages. The first method, [aurt -Syu] uses [aursync -u]. This method
+ obtains information from the aurweb RPC and is by far the most commonly used method by AUR helpers to check package update status.
+ The accuracy of the information using this method depends on several factors. These range from the AUR package standards and enforcement,
+ package developer-maintainer personal prefrences and properly following the standards, if the package uses a VCS in which case the PKGBUILD
+ likely becomes a static link, resulting in the aurweb RPC becoming outdated and inaccurate. There is also potential for errors/neglect
+ as is pointed out here: https://wiki.archlinux.org/index.php/.SRCINFO
+
+ A workaround is available in aurt to circumvent many of the potential aurweb RPC issues. [Aurt -Vs] runs all* the installed AUR
+ packages through a process of running  makepkg -so, makepkg --printsrcinfo, and [git rev-parse HEAD] -vs- [git ls-remote &lt;url&gt; HEAD].
+ This increases the accuracy of the update status availability for AUR packages. The cost of running this operation is time. Rather that
+ for example, an update report generated in ~1.7 sec as when running [aurt -Qu], it takes ~6.4 min to run [aurt -Vc]. This is on ~100
+ AUR packages in both cases. This time comparison is also with all the build dependencies installed. If build dep&apos;s need installed, add time.
+
+ * In a perfect world, this process only be used for VCS packages. However, all is not perfect. It is well known that partial updates
+ are officially unsupported and may lead to system issues including breakage. This includes AUR packages, depending entirely on the package/s.
+
+<font color="#FFFFFF">[cody@Arch2014p9 ~]$ </font>
+
+</pre>
+</font>
+</body>
