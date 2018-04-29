@@ -1,0 +1,528 @@
+<body bgcolor="#002B36">
+<font color="#6E8992">
+<pre>
+<font color="#FFFFFF">[cody@container8 ~]$ </font>aurt-setup
+ 
+ Checking official repo aurt dependencies.
+ Running &apos;pacman -S --needed git mc expac pkgfile sudo base-devel&apos;
+ Note: &apos;--needed&apos;   Will skip all installed packages.
+ Press [enter] to continue.
+
+
+[sudo] password for cody: 
+warning: git-2.17.0-1 is up to date -- skipping
+warning: expac-8-1 is up to date -- skipping
+warning: sudo-1.8.22-1 is up to date -- skipping
+:: There are 26 members in group base-devel:
+:: Repository core
+   1) autoconf  2) automake  3) binutils  4) bison  5) fakeroot  6) file  7) findutils  8) flex  9) gawk  10) gcc  11) gettext  12) grep  13) groff
+   14) gzip  15) libtool  16) m4  17) make  18) pacman  19) patch  20) pkg-config  21) sed  22) sudo  23) systemd  24) texinfo  25) util-linux  26) which
+
+Enter a selection (default=all): 
+warning: file-5.32-1 is up to date -- skipping
+warning: findutils-4.6.0-2 is up to date -- skipping
+warning: gawk-4.2.1-1 is up to date -- skipping
+warning: grep-3.1-1 is up to date -- skipping
+warning: gzip-1.9-1 is up to date -- skipping
+warning: pacman-5.0.2-2 is up to date -- skipping
+warning: sed-4.5-1 is up to date -- skipping
+warning: sudo-1.8.22-1 is up to date -- skipping
+warning: systemd-238.76-1 is up to date -- skipping
+warning: util-linux-2.32-3 is up to date -- skipping
+warning: which-2.21-2 is up to date -- skipping
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (23) gc-7.6.4-1  gpm-1.20.7-8  guile-2.2.3-1  libatomic_ops-7.6.4-1  libmpc-1.1.0-1  slang-2.3.2-1  autoconf-2.69-4  automake-1.15.1-1
+              binutils-2.30-3  bison-3.0.4-3  fakeroot-1.22-1  flex-2.6.4-1  gcc-7.3.1+20180406-1  gettext-0.19.8.1-2  groff-1.22.3-7
+              libtool-2.4.6+40+g6ca5e224-5  m4-1.4.18-1  make-4.2.1-2  mc-4.8.20-3  patch-2.7.6-1  pkg-config-0.29.2-1  pkgfile-17-1  texinfo-6.5-1
+
+Total Download Size:    52.35 MiB
+Total Installed Size:  243.77 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ gpm-1.20.7-8-x86_64                                                 131.2 KiB   429K/s 00:00 [#######################################################] 100%
+ m4-1.4.18-1-x86_64                                                  166.1 KiB   415K/s 00:00 [#######################################################] 100%
+ autoconf-2.69-4-any                                                 583.5 KiB   880K/s 00:01 [#######################################################] 100%
+ automake-1.15.1-1-any                                               594.7 KiB   737K/s 00:01 [#######################################################] 100%
+ binutils-2.30-3-x86_64                                                4.6 MiB   670K/s 00:07 [#######################################################] 100%
+ bison-3.0.4-3-x86_64                                                561.7 KiB   641K/s 00:01 [#######################################################] 100%
+ fakeroot-1.22-1-x86_64                                               66.7 KiB  99.1K/s 00:01 [#######################################################] 100%
+ flex-2.6.4-1-x86_64                                                 282.8 KiB   550K/s 00:01 [#######################################################] 100%
+ libmpc-1.1.0-1-x86_64                                                64.7 KiB   628K/s 00:00 [#######################################################] 100%
+ gcc-7.3.1+20180406-1-x86_64                                          31.2 MiB  1005K/s 00:32 [#######################################################] 100%
+ gettext-0.19.8.1-2-x86_64                                          2026.9 KiB   564K/s 00:04 [#######################################################] 100%
+ groff-1.22.3-7-x86_64                                              1824.6 KiB   631K/s 00:03 [#######################################################] 100%
+ libtool-2.4.6+40+g6ca5e224-5-x86_64                                 400.1 KiB   558K/s 00:01 [#######################################################] 100%
+ texinfo-6.5-1-x86_64                                               1180.1 KiB   582K/s 00:02 [#######################################################] 100%
+ make-4.2.1-2-x86_64                                                 407.7 KiB   527K/s 00:01 [#######################################################] 100%
+ patch-2.7.6-1-x86_64                                                 91.3 KiB   781K/s 00:00 [#######################################################] 100%
+ pkg-config-0.29.2-1-x86_64                                           34.7 KiB  3.39M/s 00:00 [#######################################################] 100%
+ slang-2.3.2-1-x86_64                                                714.1 KiB   621K/s 00:01 [#######################################################] 100%
+ pkgfile-17-1-x86_64                                                  23.2 KiB  2.26M/s 00:00 [#######################################################] 100%
+ libatomic_ops-7.6.4-1-x86_64                                         63.7 KiB   106K/s 00:01 [#######################################################] 100%
+ gc-7.6.4-1-x86_64                                                   218.9 KiB   534K/s 00:00 [#######################################################] 100%
+ guile-2.2.3-1-x86_64                                                  5.6 MiB   776K/s 00:07 [#######################################################] 100%
+ mc-4.8.20-3-x86_64                                                 1704.7 KiB   966K/s 00:02 [#######################################################] 100%
+(23/23) checking keys in keyring                                                              [#######################################################] 100%
+(23/23) checking package integrity                                                            [#######################################################] 100%
+(23/23) loading package files                                                                 [#######################################################] 100%
+(23/23) checking for file conflicts                                                           [#######################################################] 100%
+(23/23) checking available disk space                                                         [#######################################################] 100%
+:: Processing package changes...
+( 1/23) installing gpm                                                                        [#######################################################] 100%
+( 2/23) installing slang                                                                      [#######################################################] 100%
+( 3/23) installing mc                                                                         [#######################################################] 100%
+Optional dependencies for mc
+    aspell: spelling corrections
+    cabextract: ucab extfs
+    cdparanoia: audio extfs
+    cdrkit: iso9660 extfs
+    cvs: CVS support
+    gawk: hp48+ extfs [installed]
+    mtools: a+ extfs
+    p7zip: support for 7zip archives
+    perl: needed by several extfs scripts [installed]
+    python2-boto: s3+ extfs
+    python2-pytz: s3+ extfs
+    samba: VFS support
+    unace: uace extfs
+    unarj: uarj extfs
+    unrar: urar extfs
+    zip: uzip extfs
+( 4/23) installing pkgfile                                                                    [#######################################################] 100%
+==&gt; Run &apos;pkgfile --update&apos; to initialize the database
+( 5/23) installing m4                                                                         [#######################################################] 100%
+( 6/23) installing autoconf                                                                   [#######################################################] 100%
+( 7/23) installing automake                                                                   [#######################################################] 100%
+( 8/23) installing binutils                                                                   [#######################################################] 100%
+( 9/23) installing bison                                                                      [#######################################################] 100%
+(10/23) installing fakeroot                                                                   [#######################################################] 100%
+(11/23) installing flex                                                                       [#######################################################] 100%
+(12/23) installing libmpc                                                                     [#######################################################] 100%
+(13/23) installing gcc                                                                        [#######################################################] 100%
+Optional dependencies for gcc
+    lib32-gcc-libs: for generating code for 32-bit ABI
+(14/23) installing gettext                                                                    [#######################################################] 100%
+Optional dependencies for gettext
+    git: for autopoint infrastructure updates [installed]
+(15/23) installing groff                                                                      [#######################################################] 100%
+Optional dependencies for groff
+    netpbm: for use together with man -H command interaction in browsers
+    psutils: for use together with man -H command interaction in browsers
+    libxaw: for gxditview
+(16/23) installing libtool                                                                    [#######################################################] 100%
+(17/23) installing texinfo                                                                    [#######################################################] 100%
+(18/23) installing libatomic_ops                                                              [#######################################################] 100%
+(19/23) installing gc                                                                         [#######################################################] 100%
+(20/23) installing guile                                                                      [#######################################################] 100%
+(21/23) installing make                                                                       [#######################################################] 100%
+(22/23) installing patch                                                                      [#######################################################] 100%
+Optional dependencies for patch
+    ed: for patch -e functionality
+(23/23) installing pkg-config                                                                 [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/3) Reloading system manager configuration...
+(2/3) Arming ConditionNeedsUpdate...
+(3/3) Updating the info directory file...
+============================================================
+aurutils and or cower not installed. Installing them now
+============================================================
+Cloning into &apos;cower&apos;...
+remote: Counting objects: 36, done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 36 (delta 12), reused 26 (delta 6)
+Unpacking objects: 100% (36/36), done.
+Cloning into &apos;aurutils&apos;...
+remote: Counting objects: 305, done.
+remote: Compressing objects: 100% (217/217), done.
+remote: Total 305 (delta 122), reused 243 (delta 88)
+Receiving objects: 100% (305/305), 49.90 KiB | 268.00 KiB/s, done.
+Resolving deltas: 100% (122/122), done.
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Making package: cower 17-2 (Sun Apr 29 11:42:52 PDT 2018)</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Checking runtime dependencies...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Installing missing dependencies...</b></font>
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) yajl-2.1.0-1
+
+Total Download Size:   0.03 MiB
+Total Installed Size:  0.16 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ yajl-2.1.0-1-x86_64                                                  31.2 KiB   303K/s 00:00 [#######################################################] 100%
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing yajl                                                                         [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Checking buildtime dependencies...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Retrieving sources...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Downloading cower-17.tar.gz...</b></font>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 25661  100 25661    0     0  21102      0  0:00:01  0:00:01 --:--:-- 21085
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Downloading cower-17.tar.gz.sig...</b></font>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   310  100   310    0     0    295      0  0:00:01  0:00:01 --:--:--   295
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Validating source files with md5sums...</b></font>
+    cower-17.tar.gz ... Passed
+    cower-17.tar.gz.sig ... Skipped
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Verifying source file signatures with gpg...</b></font>
+    cower-17.tar.gz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Extracting sources...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Extracting cower-17.tar.gz with bsdtar</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Starting build()...</b></font>
+cc -Wclobbered -Wempty-body -Wfloat-equal -Wignored-qualifiers -Wmissing-declarations -Wmissing-parameter-type -Wsign-compare -Wmissing-prototypes -Wold-style-declaration -Wtype-limits -Woverride-init -Wunused -Wstrict-prototypes -Wuninitialized -std=c99 -g -pthread -pedantic -Wall -Wextra -fstack-protector-strong -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -D_GNU_SOURCE -DCOWER_VERSION=\&quot;17\&quot; -D_FORTIFY_SOURCE=2  -c -o cower.o src/cower.c
+<font color="#6E8992"><b>src/cower.c:</b></font> In function &apos;<font color="#6E8992"><b>parse_options</b></font>&apos;:
+<font color="#6E8992"><b>src/cower.c:1194:23:</b></font> <font color="#FF55FF"><b>warning: </b></font>this statement may fall through [<font color="#FF55FF"><b>-Wimplicit-fallthrough=</b></font>]
+         <font color="#FF55FF"><b>cfg.sortorder = SORT_REVERSE</b></font>;
+         <font color="#FF55FF"><b>~~~~~~~~~~~~~~^~~~~~~~~~~~~~</b></font>
+<font color="#6E8992"><b>src/cower.c:1195:7:</b></font> <font color="#55FFFF"><b>note: </b></font>here
+       <font color="#55FFFF"><b>case</b></font> OP_SORT:
+       <font color="#55FFFF"><b>^~~~</b></font>
+cc -Wclobbered -Wempty-body -Wfloat-equal -Wignored-qualifiers -Wmissing-declarations -Wmissing-parameter-type -Wsign-compare -Wmissing-prototypes -Wold-style-declaration -Wtype-limits -Woverride-init -Wunused -Wstrict-prototypes -Wuninitialized -std=c99 -g -pthread -pedantic -Wall -Wextra -fstack-protector-strong -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -D_GNU_SOURCE -DCOWER_VERSION=\&quot;17\&quot; -D_FORTIFY_SOURCE=2  -c -o aur.o src/aur.c
+cc -Wclobbered -Wempty-body -Wfloat-equal -Wignored-qualifiers -Wmissing-declarations -Wmissing-parameter-type -Wsign-compare -Wmissing-prototypes -Wold-style-declaration -Wtype-limits -Woverride-init -Wunused -Wstrict-prototypes -Wuninitialized -std=c99 -g -pthread -pedantic -Wall -Wextra -fstack-protector-strong -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -D_GNU_SOURCE -DCOWER_VERSION=\&quot;17\&quot; -D_FORTIFY_SOURCE=2  -c -o package.o src/package.c
+cc -pthread  -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now  cower.o aur.o package.o  -lcurl -lalpm -lyajl -larchive -o cower
+pod2man --section=1 --center=&quot;Cower Manual&quot; --name=&quot;COWER&quot; --release=&quot;cower 17&quot; README.pod cower.1
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Entering fakeroot environment...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Starting package()...</b></font>
+install -D -m755 cower &quot;/var/tmp/build/cower/pkg/cower/usr/bin/cower&quot;
+install -D -m644 cower.1 &quot;/var/tmp/build/cower/pkg/cower/usr/share/man/man1/cower.1&quot;
+install -D -m644 extra/bash_completion &quot;/var/tmp/build/cower/pkg/cower/usr/share/bash-completion/completions/cower&quot;
+install -D -m644 extra/zsh_completion &quot;/var/tmp/build/cower/pkg/cower/usr/share/zsh/site-functions/_cower&quot;
+install -D -m644 config &quot;/var/tmp/build/cower/pkg/cower/usr/share/doc/cower/config&quot;
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Tidying install...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Removing libtool files...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Purging unwanted files...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Removing static library files...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Stripping unneeded symbols from binaries and libraries...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Compressing man and info pages...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Checking for packaging issue...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Creating package &quot;cower&quot;...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Generating .PKGINFO file...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Generating .BUILDINFO file...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Generating .MTREE file...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Compressing package...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Leaving fakeroot environment.</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Finished making: cower 17-2 (Sun Apr 29 11:42:59 PDT 2018)</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Installing package cower with pacman -U...</b></font>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) cower-17-2
+
+Total Installed Size:  0.11 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing cower                                                                        [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Making package: aurutils 1.5.3-10 (Sun Apr 29 11:42:59 PDT 2018)</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Checking runtime dependencies...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Installing missing dependencies...</b></font>
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (3) oniguruma-6.8.2-1  jq-1.5-6  pacutils-0.6.2-1
+
+Total Download Size:   0.46 MiB
+Total Installed Size:  1.78 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ oniguruma-6.8.2-1-x86_64                                            166.7 KiB   501K/s 00:00 [#######################################################] 100%
+ jq-1.5-6-x86_64                                                     185.3 KiB   741K/s 00:00 [#######################################################] 100%
+ pacutils-0.6.2-1-x86_64                                             122.2 KiB   185K/s 00:01 [#######################################################] 100%
+(3/3) checking keys in keyring                                                                [#######################################################] 100%
+(3/3) checking package integrity                                                              [#######################################################] 100%
+(3/3) loading package files                                                                   [#######################################################] 100%
+(3/3) checking for file conflicts                                                             [#######################################################] 100%
+(3/3) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/3) installing oniguruma                                                                    [#######################################################] 100%
+(2/3) installing jq                                                                           [#######################################################] 100%
+(3/3) installing pacutils                                                                     [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Checking buildtime dependencies...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Retrieving sources...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Downloading aurutils-1.5.3.tar.gz...</b></font>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   121    0   121    0     0    366      0 --:--:-- --:--:-- --:--:--   366
+100 17869    0 17869    0     0  24921      0 --:--:-- --:--:-- --:--:-- 93067
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Downloading aurutils-1.5.3.tar.gz.asc...</b></font>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   606    0   606    0     0   1697      0 --:--:-- --:--:-- --:--:--  1697
+100   228  100   228    0     0    264      0 --:--:-- --:--:-- --:--:--  222k
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Found 0001-aurbuild-backport-fix-for-236.patch</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Found 0002-aursync-make-L-optional-281.patch</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Found 0003-aurbuild-update-default-options.patch</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Found 0004-aurfetch-specify-git-work-tree-git-dir-274.patch</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Found 0005-specify-absolute-paths-for-GIT_DIR-GIT_WORK_TREE.patch</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Found 0006-aurfetch-aursearch-use-aria2-no-conf.patch</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Found 0007-aurchain-do-not-sort-results-when-appending.patch</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Validating source files with sha256sums...</b></font>
+    aurutils-1.5.3.tar.gz ... Passed
+    aurutils-1.5.3.tar.gz.asc ... Skipped
+    0001-aurbuild-backport-fix-for-236.patch ... Passed
+    0002-aursync-make-L-optional-281.patch ... Passed
+    0003-aurbuild-update-default-options.patch ... Passed
+    0004-aurfetch-specify-git-work-tree-git-dir-274.patch ... Passed
+    0005-specify-absolute-paths-for-GIT_DIR-GIT_WORK_TREE.patch ... Passed
+    0006-aurfetch-aursearch-use-aria2-no-conf.patch ... Passed
+    0007-aurchain-do-not-sort-results-when-appending.patch ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Verifying source file signatures with gpg...</b></font>
+    aurutils-1.5.3.tar.gz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Extracting sources...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Extracting aurutils-1.5.3.tar.gz with bsdtar</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Starting prepare()...</b></font>
+patching file bin/aurbuild
+patching file bin/aursync
+patching file man1/aursync.1
+patching file bin/aurbuild
+patching file bin/aurfetch
+patching file bin/aurfetch
+patching file bin/aurfetch
+patching file bin/aursearch
+patching file bin/aurchain
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Entering fakeroot environment...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Starting package()...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Tidying install...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Removing libtool files...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Purging unwanted files...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Removing static library files...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Stripping unneeded symbols from binaries and libraries...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Compressing man and info pages...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Checking for packaging issue...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Creating package &quot;aurutils&quot;...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Generating .PKGINFO file...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Generating .BUILDINFO file...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Generating .MTREE file...</b></font>
+<font color="#5555FF"><b>  -&gt;</b></font><font color="#6E8992"><b> Compressing package...</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Leaving fakeroot environment.</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Finished making: aurutils 1.5.3-10 (Sun Apr 29 11:43:05 PDT 2018)</b></font>
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Installing package aurutils with pacman -U...</b></font>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) aurutils-1.5.3-10
+
+Total Installed Size:  0.09 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing aurutils                                                                     [#######################################################] 100%
+Optional dependencies for aurutils
+    devtools: systemd-nspawn support
+    vifm: build file interaction
+    aria2: threaded downloads
+    parallel: threaded downloads
+    expac: aursift script [installed]
+    repose: repo-add alternative
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+
+ Configuring pacman for and creating local aur repo.
+ Need sudo to proceed.
+
+
+<font color="#55FF55"><b>==&gt;</b></font><font color="#6E8992"><b> Creating updated database file &apos;/var/cache/pacman/aur/aur.db.tar&apos;</b></font>
+<font color="#FFFF55"><b>==&gt; WARNING:</b></font><font color="#6E8992"><b> No packages remain, creating empty database.</b></font>
+<font color="#FFFF55"><b>==&gt; WARNING:</b></font><font color="#6E8992"><b> No packages remain, creating empty database.</b></font>
+
+ Syncing new aur database. This operation requires updating system to be safe.
+ Please allow update proceed.
+
+
+:: Synchronizing package databases...
+ core                                                                129.7 KiB   428K/s 00:00 [#######################################################] 100%
+ extra                                                              1597.2 KiB   942K/s 00:02 [#######################################################] 100%
+ community                                                             4.3 MiB   958K/s 00:05 [#######################################################] 100%
+ aur                                                                1024.0   B  0.00B/s 00:00 [#######################################################] 100%
+:: Starting full system upgrade...
+ there is nothing to do
+
+=========================================================
+ls -al /var/cache/pacman/aur:
+=========================================================
+total 16
+drwxr-xr-x 2 cody users 4096 Apr 29 11:43 .
+drwxr-xr-x 4 root root  4096 Apr 29 11:43 ..
+lrwxrwxrwx 1 cody users   10 Apr 29 11:43 aur.db -&gt; aur.db.tar
+-rw-r--r-- 1 cody users 1024 Apr 29 11:43 aur.db.tar
+lrwxrwxrwx 1 cody users   13 Apr 29 11:43 aur.files -&gt; aur.files.tar
+-rw-r--r-- 1 cody users 1024 Apr 29 11:43 aur.files.tar
+
+=========================================================
+cat /etc/pacman.conf:
+=========================================================
+#
+# /etc/pacman.conf
+#
+# See the pacman.conf(5) manpage for option and repository directives
+
+#
+# GENERAL OPTIONS
+#
+[options]
+# The following paths are commented out with their default values listed.
+# If you wish to use different paths, uncomment and update the paths.
+#RootDir     = /
+#DBPath      = /var/lib/pacman/
+#CacheDir    = /var/cache/pacman/pkg/
+#LogFile     = /var/log/pacman.log
+#GPGDir      = /etc/pacman.d/gnupg/
+#HookDir     = /etc/pacman.d/hooks/
+HoldPkg     = pacman glibc
+#XferCommand = /usr/bin/curl -C - -f %u &gt; %o
+#XferCommand = /usr/bin/wget --passive-ftp -c -O %o %u
+#CleanMethod = KeepInstalled
+#UseDelta    = 0.7
+Architecture = auto
+
+# Pacman won&apos;t upgrade packages listed in IgnorePkg and members of IgnoreGroup
+#IgnorePkg   =
+#IgnoreGroup =
+
+#NoUpgrade   =
+#NoExtract   =
+
+# Misc options
+#UseSyslog
+#Color
+#TotalDownload
+CheckSpace
+#VerbosePkgLists
+
+# By default, pacman accepts packages signed by keys that its local keyring
+# trusts (see pacman-key and its man page), as well as unsigned packages.
+SigLevel    = Required DatabaseOptional
+LocalFileSigLevel = Optional
+#RemoteFileSigLevel = Required
+
+# NOTE: You must run `pacman-key --init` before first using pacman; the local
+# keyring can then be populated with the keys of all official Arch Linux
+# packagers with `pacman-key --populate archlinux`.
+
+#
+# REPOSITORIES
+#   - can be defined here or included from another file
+#   - pacman will search repositories in the order defined here
+#   - local/custom mirrors can be added here or in separate files
+#   - repositories listed first will take precedence when packages
+#     have identical names, regardless of version number
+#   - URLs will have $repo replaced by the name of the current repo
+#   - URLs will have $arch replaced by the name of the architecture
+#
+# Repository entries are of the format:
+#       [repo-name]
+#       Server = ServerName
+#       Include = IncludePath
+#
+# The header [repo-name] is crucial - it must be present and
+# uncommented to enable the repo.
+#
+
+# The testing repositories are disabled by default. To enable, uncomment the
+# repo name header and Include lines. You can add preferred servers immediately
+# after the header, and they will be used before the default mirrors.
+
+#[testing]
+#Include = /etc/pacman.d/mirrorlist
+
+[core]
+Include = /etc/pacman.d/mirrorlist
+
+[extra]
+Include = /etc/pacman.d/mirrorlist
+
+#[community-testing]
+#Include = /etc/pacman.d/mirrorlist
+
+[community]
+Include = /etc/pacman.d/mirrorlist
+
+# If you want to run 32 bit applications on your x86_64 system,
+# enable the multilib repositories as required here.
+
+#[multilib-testing]
+#Include = /etc/pacman.d/mirrorlist
+
+#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+
+# An example of a custom package repository.  See the pacman manpage for
+# tips on creating your own repositories.
+#[custom]
+#SigLevel = Optional TrustAll
+#Server = file:///home/custompkgs
+
+# Path to aurt.conf
+Include = /etc/aurt.conf
+
+
+=========================================================
+cat /etc/aurt.conf:
+=========================================================
+#
+# /etc/aurt.conf
+#
+
+#
+# [default settings]
+# The following paths are commented out with their default values listed.
+# If you wish to use different paths, uncomment and update the paths.
+# RootDir     = /
+# DBPath      = /var/lib/pacman/
+# CacheDir    = /var/cache/pacman/pkg/
+# LogFile     = /var/log/pacman.log
+# GPGDir      = /etc/pacman.d/gnupg/
+# HookDir     = /etc/pacman.d/hooks/
+# HoldPkg     = pacman glibc
+# XferCommand = /usr/bin/curl -C - -f %u &gt; %o
+# XferCommand = /usr/bin/wget --passive-ftp -c -O %o %u
+# CleanMethod = KeepInstalled
+# UseDelta    = 0.7
+
+# Add custom settings below this line.
+
+[options]
+CacheDir    = /var/cache/pacman/aur
+CleanMethod = KeepInstalled
+
+
+[aur]
+SigLevel = Optional TrustAll
+Server = file:///var/cache/pacman/aur
+
+
+<font color="#FFFFFF">[cody@container8 ~]$ </font>
+
+</pre>
+</font>
+</body>
+
