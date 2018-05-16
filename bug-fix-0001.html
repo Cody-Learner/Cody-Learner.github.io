@@ -1,0 +1,154 @@
+<body bgcolor="#002B36">
+<font color="#6E8992">
+<pre>
+<font color="#FFFFFF">[cody@Arch2014p9 ~]$ </font>pacman -Qqm
+josm-latest
+pacaur
+<font color="#FFFFFF">[cody@Arch2014p9 ~]$ </font>checkupdates
+gnupg 2.2.6-1 -&gt; 2.2.7-1
+<font color="#FFFFFF">[cody@Arch2014p9 ~]$ </font>aurt -Vc
+
+<font color="#FF5555"><b>:: Official updates available.</b></font>
+<font color="#FF5555"><b>:: This operation WILL NOT RUN if system is not up to date. </b></font>
+
+<font color="#FFFFFF">[cody@Arch2014p9 ~]$ </font>sudo pacman -Syu
+[sudo] password for cody: 
+:: Synchronizing package databases...
+ core is up to date
+ extra is up to date
+ community is up to date
+ aur is up to date
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) gnupg-2.2.7-1
+
+Total Installed Size:  9.47 MiB
+Net Upgrade Size:      0.08 MiB
+
+:: Proceed with installation? [Y/n] y
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) upgrading gnupg                                                                         [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Updating the info directory file...
+<font color="#FFFFFF">[cody@Arch2014p9 ~]$ </font>aurt -Vc
+<font color="#55FFFF"> </font><font color="#55FFFF"><b> </b></font>
+<font color="#55FFFF"><b>:: Creating AUR package check list .... </b></font>
+<font color="#55FFFF"><b>:: Checking for updates ....</b></font>
+<font color="#55FFFF"><b> </b></font>
+<font color="#55FFFF"><b>:: Excluding locally installed package/s from update check:</b></font><font color="#FFFF55"><b> josm-latest pacaur </b></font>
+
+:: Checking : astyle-svn r655-1
+:: Checking : aurget 4.7.2-1
+:: Checking : aurora 20160907.16_f78867f-1
+:: Checking : aur-out-of-date 1.3.0-1
+:: Checking : aurutils 1.5.3-10
+<font color="#55FFFF"><b>:: Update   : aurora</b></font>
+<font color="#55FFFF"><b>:: Version  : 20160907.16_f78867f-1 </b></font>
+<font color="#55FFFF"><b>:: Available: 20180515.17_143f310-1 ................... UPDATE AVAILABLE </b></font>
+:: Checking : aurvote-git r27.fd413f1-2
+:: Checking : bfg 1.13.0-1
+:: Checking : burgaur-git 2.2.5.gb282099-1
+:: Checking : cloc-svn 1.62-1
+:: Checking : cower 18-1
+:: Checking : dockstation 1.3.0-1
+:: Checking : downgrade 6.0.0-1
+:: Checking : downgrader 2.0.0-3
+:: Checking : duff 0.5.2-1
+:: Checking : enchant1.6 1.6.1-8
+:: Checking : fetchpkg 0.3-7
+:: Checking : firefox-nightly 62.0a1.20180514-1
+:: Checking : gconf-gtk2 3.2.6-5
+:: Checking : gedit2 2.30.4-9
+:: Checking : github-desktop-git 1.1.2.beta5.r85.g99886e9fe-1
+:: Checking : git-remote-hg 0.3-1
+:: Checking : grive 0.5.0-9
+:: Checking : grub-legacy 0.97-25
+<font color="#55FFFF"><b>:: Update   : github-desktop-git</b></font>
+<font color="#55FFFF"><b>:: Version  : 1.1.2.beta5.r85.g99886e9fe-1 </b></font>
+<font color="#55FFFF"><b>:: Available: 1.1.2.beta5.r92.g4da77727b-1 ................... UPDATE AVAILABLE </b></font>
+:: Checking : hgsubversion-hg 1563.f44543ffab9b-1
+:: Checking : idutils 4.6-1
+:: Checking : inxi 3.0.07-1
+:: Checking : ld-lsb 3-7
+:: Checking : libcurl-openssl-1.0 7.57.0-1
+:: Checking : menulibre 2.2.0-1
+:: Checking : mime-editor 0.6-6
+:: Checking : mimeo 2017.6.6-1
+:: Checking : package-query-git 1.9.r1.gdd242f4-1
+:: Checking : pacnews-neovim 0.0.2-1
+:: Checking : pacvcs 1:1.0.0-1
+:: Checking : pacvim-git v1.1.1.r10.gb0934ca-1
+:: Checking : pkgbrowser 0.21-1
+:: Checking : pkgbuilder 4.2.17-1
+:: Checking : plymouth 0.9.3-3
+<font color="#55FFFF"><b>:: Update   : firefox-nightly</b></font>
+<font color="#55FFFF"><b>:: Version  : 62.0a1.20180514-1 </b></font>
+<font color="#55FFFF"><b>:: Available: 62.0a1.20180515-1 ................... UPDATE AVAILABLE </b></font>
+:: Checking : polkit-explorer 10.84983b1-1
+:: Checking : pvim v0.3.1-1
+:: Checking : python3-aur 2018-1
+:: Checking : python3-memoizedb 2017.3.30-1
+:: Checking : python3-xcgf 2017.3-1
+:: Checking : python3-xcpf 2018-1
+:: Checking : raur-git 49.89f019b-1
+:: Checking : remarkable 1.87-4
+:: Checking : repoctl 0.18-1
+:: Checking : ruby-neovim 0.7.1-1
+:: Checking : ruby-redcarpet 3.4.0-1
+:: Checking : surfraw-git 2018.02.03.g9b1b780-2
+:: Checking : terminfo-neovim-tmux 1.0-1
+:: Checking : trizen 1:1.49-2
+:: Checking : tstat-svn 775-1
+:: Checking : ttf-ms-win10 10.0.17134.1-1
+:: Checking : typescript-vim-git 7843f89-1
+:: Checking : urxvt-vim-insert 14.07a4afb-1
+:: Checking : vim-ack 1.0.9-1
+:: Checking : vim-apprentice 1.9-1
+:: Checking : vim-assistant 1.5.8-1
+:: Checking : vim-bash-support 4.2.1-1
+:: Checking : vim-bitbake-git r67.e1c3218-1
+:: Checking : vim-brainfuck 1.0.3-1
+:: Checking : vim-buftabline-git r64.14d208b-1
+:: Checking : vim-buftabs 0.18-2
+:: Checking : vim-codepad 1.4-1
+:: Checking : vim-coffeescript-git v003.23.g9e3b4de-1
+:: Checking : vim-command-t 4.0-1
+:: Checking : vim-comments 2.12-1
+:: Checking : vim-csv-git 20150115-1
+:: Checking : vim-dein-git 1.5.r24.g5940689-1
+:: Checking : vim-diffchar 7.50-1
+:: Checking : vim-easytags 3.11-1
+:: Checking : vim-endwise 1.2-3
+:: Checking : vim-fluxkeys 20091101-5
+:: Checking : vim-json-git 1:r102.3727f08-1
+:: Checking : vim-markdown 2.0.0.r250.8ace663-1
+:: Checking : vim-misc-xolox 1.17.6-1
+:: Checking : vim-openscad r14.2ac407d-1
+:: Checking : vim-pep8 1.1-1
+:: Checking : vim-pkgbuild 0.1.20141125.ca8e436-1
+:: Checking : vim-rest 0.1-1
+:: Checking : vim-session 2.13.1-2
+:: Checking : vim-tern 94.3cffc28-1
+:: Checking : vim-vimproc-git ver.9.3.r6.2300224-1
+:: Checking : vim-vim-support 2.3-1
+:: Checking : virtualbox-ext-oracle 5.2.12-1
+:: Checking : vi-vim-symlink 1-2
+:: Checking : wrapaur 2.0.10-1
+:: Checking : yarn-nightly 1.6.0.20180513.1750-1
+:: Checking : you-get-git 0.4.1060.20180429.1921-1
+<font color="#55FFFF"><b>:: Update   : you-get-git</b></font>
+<font color="#55FFFF"><b>:: Version  : 0.4.1060.20180429.1921-1 </b></font>
+<font color="#55FFFF"><b>:: Available: 0.4.1077.20180515.1929-1 ................... UPDATE AVAILABLE </b></font>
+<font color="#FFFFFF">[cody@Arch2014p9 ~]$ </font>
+</pre>
+
+</font>
+</body>
