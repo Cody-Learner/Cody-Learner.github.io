@@ -1448,15 +1448,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-#--------------------------------------
-
-# This was added by jeff june 22, 2017
-# Make sure this is before the &apos;exec&apos; command or it won&apos;t be sourced.
-# This makes .xinitrc source .xprofile so gksu thunar works properly
-# See .xprofile and: https://wiki.archlinux.org/index.php/xprofile
-
-#[ -f /etc/xprofile ] &amp;&amp; . /etc/xprofile
-#[ -f ~/.xprofile ] &amp;&amp; . ~/.xprofile
 
 #--------------------------------------
 
