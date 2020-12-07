@@ -1,0 +1,83 @@
+<body bgcolor="#002B36">
+<font color="#6E8992">
+<font size="4">
+<pre>          
+          <font color="#FF0000">(Manually running prep4ud as user)</font>
+
+<font color="#FFFFFF">$ </font>prep4ud
+[sudo] password for cody: 
+:: Synchronizing package databases...
+ core                     134.3 KiB   804K/s 00:00 [#################] 100%
+ extra                   1635.6 KiB  1165K/s 00:01 [#################] 100%
+ community                  4.6 MiB  1069K/s 00:04 [#################] 100%
+ aur                       29.0 KiB  0.00B/s 00:00 [#################] 100%
+resolving dependencies...
+
+Packages (10) gtk-update-icon-cache-3.24.1+2+ged57e564a9-1
+              gtk3-3.24.1+2+ged57e564a9-1  imagemagick-7.0.8.12-1
+              iptables-1:1.6.2-3  libmagick-7.0.8.12-1  openal-1.19.0-2
+              python-setuptools-1:40.4.3-1  python2-setuptools-1:40.4.3-1
+              retext-7.0.4-1  xfce4-battery-plugin-1.1.1-1
+
+Total Download Size:  13.78 MiB
+
+:: Proceed with download? [Y/n] 
+:: Retrieving packages...
+ iptables-1:1.6.2-3-...   324.6 KiB   887K/s 00:00 [#################] 100%
+ gtk-update-icon-cac...    14.0 KiB  4.54M/s 00:00 [#################] 100%
+ gtk3-3.24.1+2+ged57...    10.6 MiB  1623K/s 00:07 [#################] 100%
+ libmagick-7.0.8.12-...     2.2 MiB  1758K/s 00:01 [#################] 100%
+ imagemagick-7.0.8.1...   145.8 KiB  1290K/s 00:00 [#################] 100%
+ python-setuptools-1...   286.9 KiB  1116K/s 00:00 [#################] 100%
+ python2-setuptools-...   269.7 KiB  1124K/s 00:00 [#################] 100%
+(10/10) checking keys in keyring                   [#################] 100%
+(10/10) checking package integrity                 [#################] 100%
+
+
+                   <font color="#FF0000">(Notice no downloads during update)</font>
+<pre><font color="#FFFFFF">$ </font>sudo pacman -Syu  
+:: Synchronizing package databases...
+ core                                                                134.3 KiB   497K/s 00:00 [#######################################################] 100%
+ extra                                                              1635.6 KiB   802K/s 00:02 [#######################################################] 100%
+ community                                                             4.6 MiB   940K/s 00:05 [#######################################################] 100%
+ aur is up to date
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (10) gtk-update-icon-cache-3.24.1+2+ged57e564a9-1  gtk3-3.24.1+2+ged57e564a9-1  imagemagick-7.0.8.12-1  iptables-1:1.6.2-3  libmagick-7.0.8.12-1
+              openal-1.19.0-2  python-setuptools-1:40.4.3-1  python2-setuptools-1:40.4.3-1  retext-7.0.4-1  xfce4-battery-plugin-1.1.1-1
+
+Total Installed Size:  90.05 MiB
+Net Upgrade Size:      -0.06 MiB
+
+:: Proceed with installation? [Y/n] y
+(10/10) checking keys in keyring                                                              [#######################################################] 100%
+(10/10) checking package integrity                                                            [#######################################################] 100%
+(10/10) loading package files                                                                 [#######################################################] 100%
+(10/10) checking for file conflicts                                                           [#######################################################] 100%
+(10/10) checking available disk space                                                         [#######################################################] 100%
+:: Processing package changes...
+( 1/10) upgrading gtk-update-icon-cache                                                       [#######################################################] 100%
+( 2/10) upgrading iptables                                                                    [#######################################################] 100%
+( 3/10) upgrading gtk3                                                                        [#######################################################] 100%
+( 4/10) upgrading libmagick                                                                   [#######################################################] 100%
+( 5/10) upgrading imagemagick                                                                 [#######################################################] 100%
+( 6/10) upgrading openal                                                                      [#######################################################] 100%
+( 7/10) upgrading python-setuptools                                                           [#######################################################] 100%
+( 8/10) upgrading python2-setuptools                                                          [#######################################################] 100%
+( 9/10) upgrading retext                                                                      [#######################################################] 100%
+(10/10) upgrading xfce4-battery-plugin                                                        [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/8) Warn about old perl modules
+(2/8) Compiling GSettings XML schema files...
+(3/8) Probing GTK3 input method modules...
+(4/8) Updating icon theme caches...
+(5/8) Reloading system manager configuration...
+(6/8) Arming ConditionNeedsUpdate...
+(7/8) Updating the desktop file MIME type cache...
+(8/8) Updating the MIME type database...
+
+</pre>
+</font>
+</body>

@@ -1,83 +1,174 @@
 <body bgcolor="#002B36">
 <font color="#6E8992">
 <font size="4">
-<pre>          
-          <font color="#FF0000">(Manually running prep4ud as user)</font>
-
-<font color="#FFFFFF">$ </font>prep4ud
-[sudo] password for cody: 
+<pre><font color="#FFFFFF">[jeff@Arch2014p9 ~]$ </font>prep4ud				<font color="#FF0000">(Manually running prep4ud as user)</font>
+[sudo] password for jeff: 
 :: Synchronizing package databases...
- core                     134.3 KiB   804K/s 00:00 [#################] 100%
- extra                   1635.6 KiB  1165K/s 00:01 [#################] 100%
- community                  4.6 MiB  1069K/s 00:04 [#################] 100%
- aur                       29.0 KiB  0.00B/s 00:00 [#################] 100%
+ core                                                          133.1 KiB  1373 KiB/s 00:00 [#######################################################] 100%
+ extra                                                        1636.4 KiB   741 KiB/s 00:02 [#######################################################] 100%
+ community                                                       5.2 MiB  1903 KiB/s 00:03 [#######################################################] 100%
+ aur                                                            42.0 KiB  0.00   B/s 00:00 [#######################################################] 100%
 resolving dependencies...
 
-Packages (10) gtk-update-icon-cache-3.24.1+2+ged57e564a9-1
-              gtk3-3.24.1+2+ged57e564a9-1  imagemagick-7.0.8.12-1
-              iptables-1:1.6.2-3  libmagick-7.0.8.12-1  openal-1.19.0-2
-              python-setuptools-1:40.4.3-1  python2-setuptools-1:40.4.3-1
-              retext-7.0.4-1  xfce4-battery-plugin-1.1.1-1
+Packages (40) cairo-1.17.4-2  ffmpeg-2:4.3.1-3  fzf-0.24.4-1  gnutls-3.7.0-1  gst-libav-1.18.2-1  gst-plugins-bad-1.18.2-1  gst-plugins-bad-libs-1.18.2-1
+                              gst-plugins-base-1.18.2-1  gst-plugins-base-libs-1.18.2-1  gst-plugins-good-1.18.2-1  gst-plugins-ugly-1.18.2-1
+                              gstreamer-1.18.2-1  gtk-update-icon-cache-1:3.24.24-1  gtk3-1:3.24.24-1  haskell-aeson-1.5.4.1-18
+                              haskell-time-compat-1.9.5-1  htop-3.0.3-1  imagemagick-7.0.10.46-1  libmfx-20.4.1-1  libproxy-0.4.16-1  libtirpc-1.3.1-1
+                              libva-2.10.0-1  libva-vdpau-driver-0.7.4-5  linux-5.9.12.arch1-1  linux-headers-5.9.12.arch1-1  mercurial-5.6.1-1
+                              mesa-20.3.0-2  nano-5.4-1  noto-fonts-20201206-1  noto-fonts-cjk-20201206-1  nvidia-455.45.01-5  
+                              pacman-mirrorlist-20201205-1  pam-1.5.0-2  poppler-20.12.1-1  poppler-glib-20.12.1-1  reflector-2020.12.7.1-1
+                              shellcheck-0.7.1-204  sqlite-3.34.0-1  unrar-1:6.0.3-1  virtualbox-host-modules-arch-6.1.16-13
 
-Total Download Size:  13.78 MiB
+Total Download Size:  235.30 MiB
 
 :: Proceed with download? [Y/n] 
 :: Retrieving packages...
- iptables-1:1.6.2-3-...   324.6 KiB   887K/s 00:00 [#################] 100%
- gtk-update-icon-cac...    14.0 KiB  4.54M/s 00:00 [#################] 100%
- gtk3-3.24.1+2+ged57...    10.6 MiB  1623K/s 00:07 [#################] 100%
- libmagick-7.0.8.12-...     2.2 MiB  1758K/s 00:01 [#################] 100%
- imagemagick-7.0.8.1...   145.8 KiB  1290K/s 00:00 [#################] 100%
- python-setuptools-1...   286.9 KiB  1116K/s 00:00 [#################] 100%
- python2-setuptools-...   269.7 KiB  1124K/s 00:00 [#################] 100%
-(10/10) checking keys in keyring                   [#################] 100%
-(10/10) checking package integrity                 [#################] 100%
+downloading pam-1.5.0-2-x86_64.pkg.tar.zst...
+downloading mesa-20.3.0-2-x86_64.pkg.tar.zst...
+downloading gstreamer-1.18.2-1-x86_64.pkg.tar.zst...
+downloading gst-plugins-base-libs-1.18.2-1-x86_64.pkg.tar.zst...
+downloading gst-libav-1.18.2-1-x86_64.pkg.tar.zst...
+downloading gst-plugins-bad-libs-1.18.2-1-x86_64.pkg.tar.zst...
+downloading gst-plugins-good-1.18.2-1-x86_64.pkg.tar.zst...
+downloading gst-plugins-bad-1.18.2-1-x86_64.pkg.tar.zst...
+downloading gst-plugins-base-1.18.2-1-x86_64.pkg.tar.zst...
+downloading gst-plugins-ugly-1.18.2-1-x86_64.pkg.tar.zst...
+downloading htop-3.0.3-1-x86_64.pkg.tar.zst...
+downloading noto-fonts-20201206-1-any.pkg.tar.zst...
+downloading noto-fonts-cjk-20201206-1-any.pkg.tar.zst...
+downloading poppler-20.12.1-1-x86_64.pkg.tar.zst...
+downloading poppler-glib-20.12.1-1-x86_64.pkg.tar.zst...
+downloading unrar-1:6.0.3-1-x86_64.pkg.tar.zst...
+downloading reflector-2020.12.7.1-1-any.pkg.tar.zst...
+checking keyring...
+checking package integrity...
 
-
-                   <font color="#FF0000">(Notice no downloads during update)</font>
-<pre><font color="#FFFFFF">$ </font>sudo pacman -Syu  
+<font color="#FFFFFF">[jeff@Arch2014p9 ~]$ </font>sudo pacman -Syu			<font color="#FF0000">(Notice no downloads during update)</font>
 :: Synchronizing package databases...
- core                                                                134.3 KiB   497K/s 00:00 [#######################################################] 100%
- extra                                                              1635.6 KiB   802K/s 00:02 [#######################################################] 100%
- community                                                             4.6 MiB   940K/s 00:05 [#######################################################] 100%
+ core                                                          133.1 KiB  1178 KiB/s 00:00 [#######################################################] 100%
+ extra                                                        1636.4 KiB  2.20 MiB/s 00:01 [#######################################################] 100%
+ community                                                       5.2 MiB  2.02 MiB/s 00:03 [#######################################################] 100%
  aur is up to date
 :: Starting full system upgrade...
+warning: thunar: ignoring package upgrade (1.8.15-1 =&gt; 1.8.16-1)
+warning: xfconf: ignoring package upgrade (4.14.3-1 =&gt; 4.14.4-1)
+warning: xfdesktop: ignoring package upgrade (4.14.2-2 =&gt; 4.14.3-1)
+warning: xfwm4: ignoring package upgrade (4.14.5-1 =&gt; 4.14.6-1)
 resolving dependencies...
 looking for conflicting packages...
 
-Packages (10) gtk-update-icon-cache-3.24.1+2+ged57e564a9-1  gtk3-3.24.1+2+ged57e564a9-1  imagemagick-7.0.8.12-1  iptables-1:1.6.2-3  libmagick-7.0.8.12-1
-              openal-1.19.0-2  python-setuptools-1:40.4.3-1  python2-setuptools-1:40.4.3-1  retext-7.0.4-1  xfce4-battery-plugin-1.1.1-1
+Packages (40) cairo-1.17.4-2  ffmpeg-2:4.3.1-3  fzf-0.24.4-1  gnutls-3.7.0-1  gst-libav-1.18.2-1  gst-plugins-bad-1.18.2-1  gst-plugins-bad-libs-1.18.2-1
+              gst-plugins-base-1.18.2-1  gst-plugins-base-libs-1.18.2-1  gst-plugins-good-1.18.2-1  gst-plugins-ugly-1.18.2-1  gstreamer-1.18.2-1
+              gtk-update-icon-cache-1:3.24.24-1  gtk3-1:3.24.24-1  haskell-aeson-1.5.4.1-18  haskell-time-compat-1.9.5-1  htop-3.0.3-1
+              imagemagick-7.0.10.46-1  libmfx-20.4.1-1  libproxy-0.4.16-1  libtirpc-1.3.1-1  libva-2.10.0-1  libva-vdpau-driver-0.7.4-5
+              linux-5.9.12.arch1-1  linux-headers-5.9.12.arch1-1  mercurial-5.6.1-1  mesa-20.3.0-2  nano-5.4-1  noto-fonts-20201206-1
+              noto-fonts-cjk-20201206-1  nvidia-455.45.01-5  pacman-mirrorlist-20201205-1  pam-1.5.0-2  poppler-20.12.1-1  poppler-glib-20.12.1-1
+              reflector-2020.12.7.1-1  shellcheck-0.7.1-204  sqlite-3.34.0-1  unrar-1:6.0.3-1  virtualbox-host-modules-arch-6.1.16-13
 
-Total Installed Size:  90.05 MiB
-Net Upgrade Size:      -0.06 MiB
+Total Installed Size:  932.41 MiB
+Net Upgrade Size:       -2.75 MiB
 
 :: Proceed with installation? [Y/n] y
-(10/10) checking keys in keyring                                                              [#######################################################] 100%
-(10/10) checking package integrity                                                            [#######################################################] 100%
-(10/10) loading package files                                                                 [#######################################################] 100%
-(10/10) checking for file conflicts                                                           [#######################################################] 100%
-(10/10) checking available disk space                                                         [#######################################################] 100%
+(40/40) checking keys in keyring                                                           [#######################################################] 100%
+(40/40) checking package integrity                                                         [#######################################################] 100%
+(40/40) loading package files                                                              [#######################################################] 100%
+(40/40) checking for file conflicts                                                        [#######################################################] 100%
+(40/40) checking available disk space                                                      [#######################################################] 100%
+:: Running pre-transaction hooks...
+(1/2) Removing linux initcpios...
+(2/2) Unregistering Haskell modules...
 :: Processing package changes...
-( 1/10) upgrading gtk-update-icon-cache                                                       [#######################################################] 100%
-( 2/10) upgrading iptables                                                                    [#######################################################] 100%
-( 3/10) upgrading gtk3                                                                        [#######################################################] 100%
-( 4/10) upgrading libmagick                                                                   [#######################################################] 100%
-( 5/10) upgrading imagemagick                                                                 [#######################################################] 100%
-( 6/10) upgrading openal                                                                      [#######################################################] 100%
-( 7/10) upgrading python-setuptools                                                           [#######################################################] 100%
-( 8/10) upgrading python2-setuptools                                                          [#######################################################] 100%
-( 9/10) upgrading retext                                                                      [#######################################################] 100%
-(10/10) upgrading xfce4-battery-plugin                                                        [#######################################################] 100%
+( 1/40) upgrading cairo                                                                    [#######################################################] 100%
+( 2/40) upgrading libtirpc                                                                 [#######################################################] 100%
+( 3/40) upgrading pam                                                                      [#######################################################] 100%
+( 4/40) upgrading gnutls                                                                   [#######################################################] 100%
+( 5/40) upgrading libmfx                                                                   [#######################################################] 100%
+( 6/40) upgrading mesa                                                                     [#######################################################] 100%
+( 7/40) upgrading libva                                                                    [#######################################################] 100%
+( 8/40) upgrading ffmpeg                                                                   [#######################################################] 100%
+( 9/40) upgrading fzf                                                                      [#######################################################] 100%
+(10/40) upgrading gstreamer                                                                [#######################################################] 100%
+(11/40) upgrading gst-plugins-base-libs                                                    [#######################################################] 100%
+(12/40) upgrading gst-libav                                                                [#######################################################] 100%
+(13/40) upgrading gst-plugins-bad-libs                                                     [#######################################################] 100%
+(14/40) upgrading sqlite                                                                   [#######################################################] 100%
+(15/40) upgrading libproxy                                                                 [#######################################################] 100%
+(16/40) upgrading gst-plugins-good                                                         [#######################################################] 100%
+(17/40) upgrading imagemagick                                                              [#######################################################] 100%
+(18/40) upgrading gst-plugins-bad                                                          [#######################################################] 100%
+New optional dependencies for gst-plugins-bad
+    nvidia-utils: nvcodec plugin [installed]
+(19/40) upgrading gst-plugins-base                                                         [#######################################################] 100%
+(20/40) upgrading gst-plugins-ugly                                                         [#######################################################] 100%
+(21/40) upgrading gtk-update-icon-cache                                                    [#######################################################] 100%
+(22/40) upgrading gtk3                                                                     [#######################################################] 100%
+(23/40) upgrading haskell-time-compat                                                      [#######################################################] 100%
+(24/40) upgrading haskell-aeson                                                            [#######################################################] 100%
+(25/40) upgrading htop                                                                     [#######################################################] 100%
+New optional dependencies for htop
+    lm_sensors: show cpu temperatures [installed]
+(26/40) upgrading libva-vdpau-driver                                                       [#######################################################] 100%
+(27/40) upgrading linux                                                                    [#######################################################] 100%
+(28/40) upgrading linux-headers                                                            [#######################################################] 100%
+(29/40) upgrading mercurial                                                                [#######################################################] 100%
+(30/40) upgrading nano                                                                     [#######################################################] 100%
+(31/40) upgrading noto-fonts                                                               [#######################################################] 100%
+(32/40) upgrading noto-fonts-cjk                                                           [#######################################################] 100%
+(33/40) upgrading nvidia                                                                   [#######################################################] 100%
+(34/40) upgrading pacman-mirrorlist                                                        [#######################################################] 100%
+warning: /etc/pacman.d/mirrorlist installed as /etc/pacman.d/mirrorlist.pacnew
+(35/40) upgrading poppler                                                                  [#######################################################] 100%
+(36/40) upgrading poppler-glib                                                             [#######################################################] 100%
+(37/40) upgrading reflector                                                                [#######################################################] 100%
+(38/40) upgrading shellcheck                                                               [#######################################################] 100%
+(39/40) upgrading unrar                                                                    [#######################################################] 100%
+(40/40) upgrading virtualbox-host-modules-arch                                             [#######################################################] 100%
 :: Running post-transaction hooks...
-(1/8) Warn about old perl modules
-(2/8) Compiling GSettings XML schema files...
-(3/8) Probing GTK3 input method modules...
-(4/8) Updating icon theme caches...
-(5/8) Reloading system manager configuration...
-(6/8) Arming ConditionNeedsUpdate...
-(7/8) Updating the desktop file MIME type cache...
-(8/8) Updating the MIME type database...
-
+( 1/13) Reloading system manager configuration...
+( 2/13) Creating temporary files...
+( 3/13) Arming ConditionNeedsUpdate...
+( 4/13) Updating module dependencies...
+( 5/13) Updating linux initcpios...
+==&gt; Building image from preset: /etc/mkinitcpio.d/linux.preset: &apos;default&apos;
+  -&gt; -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+==&gt; Starting build: 5.9.12-arch1-1
+  -&gt; Running build hook: [base]
+  -&gt; Running build hook: [udev]
+  -&gt; Running build hook: [plymouth]
+  -&gt; Running build hook: [autodetect]
+  -&gt; Running build hook: [modconf]
+  -&gt; Running build hook: [block]
+  -&gt; Running build hook: [filesystems]
+  -&gt; Running build hook: [keyboard]
+  -&gt; Running build hook: [fsck]
+==&gt; Generating module dependencies
+==&gt; Creating gzip-compressed initcpio image: /boot/initramfs-linux.img
+==&gt; Image generation successful
+==&gt; Building image from preset: /etc/mkinitcpio.d/linux.preset: &apos;fallback&apos;
+  -&gt; -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+==&gt; Starting build: 5.9.12-arch1-1
+  -&gt; Running build hook: [base]
+  -&gt; Running build hook: [udev]
+  -&gt; Running build hook: [plymouth]
+  -&gt; Running build hook: [modconf]
+  -&gt; Running build hook: [block]
+==&gt; WARNING: Possibly missing firmware for module: aic94xx
+==&gt; WARNING: Possibly missing firmware for module: wd719x
+==&gt; WARNING: Possibly missing firmware for module: xhci_pci
+  -&gt; Running build hook: [filesystems]
+  -&gt; Running build hook: [keyboard]
+  -&gt; Running build hook: [fsck]
+==&gt; Generating module dependencies
+==&gt; Creating gzip-compressed initcpio image: /boot/initramfs-linux-fallback.img
+==&gt; Image generation successful
+( 6/13) Warn about old perl modules
+( 7/13) Updating fontconfig cache...
+( 8/13) Registering Haskell modules...
+( 9/13) Compiling GSettings XML schema files...
+(10/13) Probing GTK3 input method modules...
+(11/13) Updating icon theme caches...
+(12/13) Updating the info directory file...
+(13/13) Updating the desktop file MIME type cache...
 </pre>
 </font>
 </body>
