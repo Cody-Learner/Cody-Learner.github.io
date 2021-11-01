@@ -1,0 +1,1486 @@
+<body bgcolor="#002B36">
+<font color="#6E8992">
+<font size="3">
+<pre><font color="#FFFFFF"><b>[jeff@Arch2014p9 5]$ </b></font>./aurch-dev5 -B bauerbill
+Cloning into &apos;bauerbill&apos;...
+remote: Enumerating objects: 212, done.
+remote: Counting objects: 100% (212/212), done.
+remote: Compressing objects: 100% (149/149), done.
+remote: Total 212 (delta 63), reused 212 (delta 63), pack-reused 0
+Receiving objects: 100% (212/212), 58.19 KiB | 283.00 KiB/s, done.
+Resolving deltas: 100% (63/63), done.
+[sudo] password for jeff: 
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for bauerbill.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Checking for AUR build dependencies.
+
+:: Synchronizing package databases...
+ core is up to date
+ extra is up to date
+ community                                                          5.8 MiB  2.06 MiB/s 00:03 [#######################################################] 100%
+:: Starting full system upgrade...
+ there is nothing to do
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> AUR dependencies needed:
+     1	python3-xcgf
+     2	python-xdg
+     3	python3-memoizedb
+     4	python3-xcpf
+     5	pm2ml
+     6	python3-aur
+     7	pbget
+     8	powerpill
+     9	python3-colorsysplus
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Satisfying AUR dependencies in chroot:
+
+Cloning into &apos;python3-xcgf&apos;...
+remote: Enumerating objects: 60, done.
+remote: Counting objects: 100% (60/60), done.
+remote: Compressing objects: 100% (57/57), done.
+remote: Total 60 (delta 3), reused 60 (delta 3), pack-reused 0
+Unpacking objects: 100% (60/60), 18.48 KiB | 822.00 KiB/s, done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for python3-xcgf.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency python3-xcgf from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: python3-xcgf 2017.3-5 (Sun Oct 31 17:04:16 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing missing dependencies...</b>
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (2) libnsl-2.0.0-1  python-3.9.7-2
+
+Total Installed Size:  52.73 MiB
+
+:: Proceed with installation? [Y/n] 
+(2/2) checking keys in keyring                                                                [#######################################################] 100%
+(2/2) checking package integrity                                                              [#######################################################] 100%
+(2/2) loading package files                                                                   [#######################################################] 100%
+(2/2) checking for file conflicts                                                             [#######################################################] 100%
+(2/2) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/2) installing libnsl                                                                       [#######################################################] 100%
+(2/2) installing python                                                                       [#######################################################] 100%
+Optional dependencies for python
+    python-setuptools
+    python-pip
+    sqlite [installed]
+    mpdecimal: for decimal
+    xz: for lzma [installed]
+    tk: for tkinter
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-xcgf-2017.3.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11244  100 11244    0     0  55432      0 --:--:-- --:--:-- --:--:-- 55663
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-xcgf-2017.3.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3501      0 --:--:-- --:--:-- --:--:--  3515
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    python3-xcgf-2017.3.tar.xz ... Passed
+    python3-xcgf-2017.3.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    python3-xcgf-2017.3.tar.xz ... Passed
+    python3-xcgf-2017.3.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    python3-xcgf-2017.3.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting python3-xcgf-2017.3.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+copying XCGF.py -&gt; build/lib
+running install_lib
+creating /home/builduser/python3-xcgf/pkg/python3-xcgf/usr
+creating /home/builduser/python3-xcgf/pkg/python3-xcgf/usr/lib
+creating /home/builduser/python3-xcgf/pkg/python3-xcgf/usr/lib/python3.9
+creating /home/builduser/python3-xcgf/pkg/python3-xcgf/usr/lib/python3.9/site-packages
+copying build/lib/XCGF.py -&gt; /home/builduser/python3-xcgf/pkg/python3-xcgf/usr/lib/python3.9/site-packages
+byte-compiling /home/builduser/python3-xcgf/pkg/python3-xcgf/usr/lib/python3.9/site-packages/XCGF.py to XCGF.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmp7kzchdcd.py&apos;
+/usr/sbin/python3 /tmp/tmp7kzchdcd.py
+removing /tmp/tmp7kzchdcd.py
+running install_egg_info
+Writing /home/builduser/python3-xcgf/pkg/python3-xcgf/usr/lib/python3.9/site-packages/XCGF-2017.03.10.23.45.54-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;python3-xcgf&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: python3-xcgf 2017.3-5 (Sun Oct 31 17:04:20 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package python3-xcgf with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) python3-xcgf-2017.3-5
+
+Total Installed Size:  0.04 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing python3-xcgf                                                                 [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+python3-xcgf
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed python3-xcgf as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+     1	python-xdg
+     2	python3-memoizedb
+     3	python3-xcpf
+     4	pm2ml
+     5	python3-aur
+     6	pbget
+     7	powerpill
+     8	python3-colorsysplus
+
+Cloning into &apos;python-xdg&apos;...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 17 (delta 3), reused 17 (delta 3), pack-reused 0
+Unpacking objects: 100% (17/17), 3.09 KiB | 395.00 KiB/s, done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for python-xdg.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency python-xdg from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: python-xdg 5.1.1-1 (Sun Oct 31 17:04:23 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing missing dependencies...</b>
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (71) m2r-0.2.1-8  python-aiohttp-3.7.4.post0-1  python-appdirs-1.4.4-3  python-async-timeout-3.0.1-5  python-attrs-21.2.0-1  python-bowler-0.8.0-5
+              python-cachecontrol-0.12.6-5  python-cerberus-1.3.4-1  python-cffi-1.14.6-2  python-chardet-4.0.0-2  python-click-8.0.3-1
+              python-colorama-0.4.4-3  python-contextlib2-0.6.0.post1-3  python-cryptography-35.0.0-1  python-dephell-archive-0.1.5-5
+              python-dephell-argparse-0.1.3-3  python-dephell-changelogs-0.0.1-3  python-dephell-discover-0.2.10-4  python-dephell-licenses-0.1.7-3
+              python-dephell-links-0.1.4-5  python-dephell-markers-1.0.1-6  python-dephell-pythons-0.1.15-2  python-dephell-setuptools-0.2.1-4
+              python-dephell-shells-0.1.3-5  python-dephell-specifier-0.2.2-3  python-dephell-venvs-0.1.16-5  python-dephell-versioning-0.1.2-3
+              python-distlib-0.3.3-1  python-distro-1.6.0-1  python-docutils-0.17.1-2  python-fissix-19.2b1-5  python-html5lib-1.1-6  python-idna-3.2-1
+              python-jinja-3.0.2-1  python-markupsafe-2.0.1-1  python-mistune1-0.8.4-2  python-more-itertools-8.10.0-1  python-msgpack-1.0.2-2
+              python-multidict-5.1.0-1  python-ordered-set-4.0.2-3  python-packaging-20.9-2  python-pep517-0.11.0-1  python-pexpect-4.8.0-4
+              python-pip-20.3.4-1  python-ply-3.11-7  python-progress-1.6-1  python-ptyprocess-0.7.0-2  python-pycparser-2.20-3  python-pygments-2.10.0-1
+              python-pyopenssl-20.0.1-1  python-pyparsing-2.4.7-3  python-requests-2.26.0-1  python-resolvelib-0.5.5-1  python-retrying-1.3.3-9
+              python-ruamel-yaml-0.17.16-1  python-ruamel.yaml.clib-0.2.6-1  python-sh-1.14.2-1  python-shellingham-1.4.0-1  python-six-1.16.0-1
+              python-tabulate-0.8.9-2  python-termcolor-1.1.0-10  python-toml-0.10.2-3  python-tomli-1.2.1-1  python-tomlkit-0.7.2-1
+              python-typing_extensions-3.10.0.2-2  python-urllib3-1.26.7-1  python-webencodings-0.5.1-6  python-yarl-1.6.3-1  python-yaspin-2.1.0-1
+              python-dephell-0.8.3-3  python-setuptools-1:57.4.0-2
+
+Total Installed Size:  49.84 MiB
+
+:: Proceed with installation? [Y/n] 
+(71/71) checking keys in keyring                                                              [#######################################################] 100%
+(71/71) checking package integrity                                                            [#######################################################] 100%
+(71/71) loading package files                                                                 [#######################################################] 100%
+(71/71) checking for file conflicts                                                           [#######################################################] 100%
+(71/71) checking available disk space                                                         [#######################################################] 100%
+:: Processing package changes...
+( 1/71) installing python-appdirs                                                             [#######################################################] 100%
+( 2/71) installing python-more-itertools                                                      [#######################################################] 100%
+( 3/71) installing python-ordered-set                                                         [#######################################################] 100%
+( 4/71) installing python-pyparsing                                                           [#######################################################] 100%
+( 5/71) installing python-six                                                                 [#######################################################] 100%
+( 6/71) installing python-packaging                                                           [#######################################################] 100%
+( 7/71) installing python-setuptools                                                          [#######################################################] 100%
+( 8/71) installing python-chardet                                                             [#######################################################] 100%
+( 9/71) installing python-multidict                                                           [#######################################################] 100%
+(10/71) installing python-async-timeout                                                       [#######################################################] 100%
+(11/71) installing python-idna                                                                [#######################################################] 100%
+(12/71) installing python-typing_extensions                                                   [#######################################################] 100%
+(13/71) installing python-yarl                                                                [#######################################################] 100%
+(14/71) installing python-attrs                                                               [#######################################################] 100%
+(15/71) installing python-aiohttp                                                             [#######################################################] 100%
+Optional dependencies for python-aiohttp
+    gunicorn: to deploy using Gunicorn
+    python-aiodns: for fast DNS resolving
+    python-cchardet: for faster encoding detection
+    python-brotli: for Brotli transfer-encodings support
+(16/71) installing python-click                                                               [#######################################################] 100%
+(17/71) installing python-fissix                                                              [#######################################################] 100%
+(18/71) installing python-sh                                                                  [#######################################################] 100%
+(19/71) installing python-bowler                                                              [#######################################################] 100%
+(20/71) installing python-cerberus                                                            [#######################################################] 100%
+(21/71) installing python-colorama                                                            [#######################################################] 100%
+(22/71) installing python-dephell-archive                                                     [#######################################################] 100%
+(23/71) installing python-dephell-argparse                                                    [#######################################################] 100%
+(24/71) installing python-urllib3                                                             [#######################################################] 100%
+Optional dependencies for python-urllib3
+    python-pysocks: SOCKS support
+    python-brotli: Brotli support
+    python-pyopenssl: security support [pending]
+    python-idna: security support [installed]
+(25/71) installing python-requests                                                            [#######################################################] 100%
+Optional dependencies for python-requests
+    python-pysocks: SOCKS proxy support
+(26/71) installing python-dephell-changelogs                                                  [#######################################################] 100%
+(27/71) installing python-dephell-discover                                                    [#######################################################] 100%
+(28/71) installing python-dephell-licenses                                                    [#######################################################] 100%
+(29/71) installing python-dephell-links                                                       [#######################################################] 100%
+(30/71) installing python-dephell-specifier                                                   [#######################################################] 100%
+(31/71) installing python-dephell-markers                                                     [#######################################################] 100%
+(32/71) installing python-dephell-pythons                                                     [#######################################################] 100%
+(33/71) installing python-dephell-setuptools                                                  [#######################################################] 100%
+(34/71) installing python-ptyprocess                                                          [#######################################################] 100%
+(35/71) installing python-pexpect                                                             [#######################################################] 100%
+(36/71) installing python-shellingham                                                         [#######################################################] 100%
+(37/71) installing python-dephell-shells                                                      [#######################################################] 100%
+(38/71) installing python-dephell-venvs                                                       [#######################################################] 100%
+(39/71) installing python-dephell-versioning                                                  [#######################################################] 100%
+(40/71) installing python-webencodings                                                        [#######################################################] 100%
+(41/71) installing python-html5lib                                                            [#######################################################] 100%
+Optional dependencies for python-html5lib
+    python-lxml: lxml treebuilder
+    python-genshi: genshi treewalker
+(42/71) installing python-markupsafe                                                          [#######################################################] 100%
+(43/71) installing python-jinja                                                               [#######################################################] 100%
+Optional dependencies for python-jinja
+    python-babel: for i18n support
+(44/71) installing python-msgpack                                                             [#######################################################] 100%
+(45/71) installing python-cachecontrol                                                        [#######################################################] 100%
+Optional dependencies for python-cachecontrol
+    python-lockfile: for the FileCache
+(46/71) installing python-contextlib2                                                         [#######################################################] 100%
+(47/71) installing python-distlib                                                             [#######################################################] 100%
+(48/71) installing python-distro                                                              [#######################################################] 100%
+(49/71) installing python-tomli                                                               [#######################################################] 100%
+(50/71) installing python-pep517                                                              [#######################################################] 100%
+(51/71) installing python-progress                                                            [#######################################################] 100%
+(52/71) installing python-retrying                                                            [#######################################################] 100%
+(53/71) installing python-resolvelib                                                          [#######################################################] 100%
+(54/71) installing python-toml                                                                [#######################################################] 100%
+(55/71) installing python-ply                                                                 [#######################################################] 100%
+(56/71) installing python-pycparser                                                           [#######################################################] 100%
+(57/71) installing python-cffi                                                                [#######################################################] 100%
+(58/71) installing python-cryptography                                                        [#######################################################] 100%
+(59/71) installing python-pyopenssl                                                           [#######################################################] 100%
+(60/71) installing python-pip                                                                 [#######################################################] 100%
+(61/71) installing python-pygments                                                            [#######################################################] 100%
+(62/71) installing python-ruamel.yaml.clib                                                    [#######################################################] 100%
+(63/71) installing python-ruamel-yaml                                                         [#######################################################] 100%
+(64/71) installing python-tabulate                                                            [#######################################################] 100%
+Optional dependencies for python-tabulate
+    python-numpy: NumPy array support
+    python-pandas: pandas.DataFrame support
+    python-wcwidth: wide-character support
+(65/71) installing python-tomlkit                                                             [#######################################################] 100%
+(66/71) installing python-termcolor                                                           [#######################################################] 100%
+(67/71) installing python-yaspin                                                              [#######################################################] 100%
+(68/71) installing python-mistune1                                                            [#######################################################] 100%
+(69/71) installing python-docutils                                                            [#######################################################] 100%
+(70/71) installing m2r                                                                        [#######################################################] 100%
+(71/71) installing python-dephell                                                             [#######################################################] 100%
+Optional dependencies for python-dephell
+    python-aiofiles: speed up file writes for files downloaded from warehouse
+    python-docker: for the docker subcommand
+    python-dockerpty: for the docker subcommand
+    python-gnupg: for the package verify subcommand
+    python-graphviz: print deps tree as a graph
+    autopep8: make setup.py converter produce formatted pep8 output
+    yapf: make setup.py converter produce google yapf-formatted output
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python-xdg-5.1.1.tar.gz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   122  100   122    0     0    427      0 --:--:-- --:--:-- --:--:--   428
+100 22662    0 22662    0     0  36434      0 --:--:-- --:--:-- --:--:-- 36434
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha256sums...</b>
+    python-xdg-5.1.1.tar.gz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting python-xdg-5.1.1.tar.gz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting prepare()...</b>
+<font color="#AA5500">WARNING</font> <font color="#AAAAAA">cannot find tool.dephell section in the config</font> <font color="#AA00AA">(path=pyproject.toml)</font>
+<font color="#00AA00">INFO</font> <font color="#AAAAAA">converted</font> 
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting build()...</b>
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/xdg
+copying src/xdg/__init__.py -&gt; build/lib/xdg
+copying src/xdg/py.typed -&gt; build/lib/xdg
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running install_lib
+creating /home/builduser/python-xdg/pkg/python-xdg/usr
+creating /home/builduser/python-xdg/pkg/python-xdg/usr/lib
+creating /home/builduser/python-xdg/pkg/python-xdg/usr/lib/python3.9
+creating /home/builduser/python-xdg/pkg/python-xdg/usr/lib/python3.9/site-packages
+creating /home/builduser/python-xdg/pkg/python-xdg/usr/lib/python3.9/site-packages/xdg
+copying build/lib/xdg/py.typed -&gt; /home/builduser/python-xdg/pkg/python-xdg/usr/lib/python3.9/site-packages/xdg
+copying build/lib/xdg/__init__.py -&gt; /home/builduser/python-xdg/pkg/python-xdg/usr/lib/python3.9/site-packages/xdg
+byte-compiling /home/builduser/python-xdg/pkg/python-xdg/usr/lib/python3.9/site-packages/xdg/__init__.py to __init__.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmprwt1fj1v.py&apos;
+/usr/sbin/python /tmp/tmprwt1fj1v.py
+removing /tmp/tmprwt1fj1v.py
+running install_egg_info
+running egg_info
+creating src/xdg.egg-info
+writing src/xdg.egg-info/PKG-INFO
+writing dependency_links to src/xdg.egg-info/dependency_links.txt
+writing requirements to src/xdg.egg-info/requires.txt
+writing top-level names to src/xdg.egg-info/top_level.txt
+writing manifest file &apos;src/xdg.egg-info/SOURCES.txt&apos;
+reading manifest file &apos;src/xdg.egg-info/SOURCES.txt&apos;
+adding license file &apos;LICENCE&apos;
+writing manifest file &apos;src/xdg.egg-info/SOURCES.txt&apos;
+Copying src/xdg.egg-info to /home/builduser/python-xdg/pkg/python-xdg/usr/lib/python3.9/site-packages/xdg-5.1.1-py3.9.egg-info
+running install_scripts
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;python-xdg&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: python-xdg 5.1.1-1 (Sun Oct 31 17:04:35 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Removing installed dependencies...</b>
+checking dependencies...
+:: python optionally requires python-setuptools
+:: python optionally requires python-pip
+
+Packages (71) m2r-0.2.1-8  python-aiohttp-3.7.4.post0-1  python-appdirs-1.4.4-3  python-async-timeout-3.0.1-5  python-attrs-21.2.0-1  python-bowler-0.8.0-5
+              python-cachecontrol-0.12.6-5  python-cerberus-1.3.4-1  python-cffi-1.14.6-2  python-chardet-4.0.0-2  python-click-8.0.3-1
+              python-colorama-0.4.4-3  python-contextlib2-0.6.0.post1-3  python-cryptography-35.0.0-1  python-dephell-0.8.3-3
+              python-dephell-archive-0.1.5-5  python-dephell-argparse-0.1.3-3  python-dephell-changelogs-0.0.1-3  python-dephell-discover-0.2.10-4
+              python-dephell-licenses-0.1.7-3  python-dephell-links-0.1.4-5  python-dephell-markers-1.0.1-6  python-dephell-pythons-0.1.15-2
+              python-dephell-setuptools-0.2.1-4  python-dephell-shells-0.1.3-5  python-dephell-specifier-0.2.2-3  python-dephell-venvs-0.1.16-5
+              python-dephell-versioning-0.1.2-3  python-distlib-0.3.3-1  python-distro-1.6.0-1  python-docutils-0.17.1-2  python-fissix-19.2b1-5
+              python-html5lib-1.1-6  python-idna-3.2-1  python-jinja-3.0.2-1  python-markupsafe-2.0.1-1  python-mistune1-0.8.4-2
+              python-more-itertools-8.10.0-1  python-msgpack-1.0.2-2  python-multidict-5.1.0-1  python-ordered-set-4.0.2-3  python-packaging-20.9-2
+              python-pep517-0.11.0-1  python-pexpect-4.8.0-4  python-pip-20.3.4-1  python-ply-3.11-7  python-progress-1.6-1  python-ptyprocess-0.7.0-2
+              python-pycparser-2.20-3  python-pygments-2.10.0-1  python-pyopenssl-20.0.1-1  python-pyparsing-2.4.7-3  python-requests-2.26.0-1
+              python-resolvelib-0.5.5-1  python-retrying-1.3.3-9  python-ruamel-yaml-0.17.16-1  python-ruamel.yaml.clib-0.2.6-1
+              python-setuptools-1:57.4.0-2  python-sh-1.14.2-1  python-shellingham-1.4.0-1  python-six-1.16.0-1  python-tabulate-0.8.9-2
+              python-termcolor-1.1.0-10  python-toml-0.10.2-3  python-tomli-1.2.1-1  python-tomlkit-0.7.2-1  python-typing_extensions-3.10.0.2-2
+              python-urllib3-1.26.7-1  python-webencodings-0.5.1-6  python-yarl-1.6.3-1  python-yaspin-2.1.0-1
+
+Total Removed Size:  49.84 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+( 1/71) removing python-dephell                                                               [#######################################################] 100%
+( 2/71) removing python-yaspin                                                                [#######################################################] 100%
+( 3/71) removing python-termcolor                                                             [#######################################################] 100%
+( 4/71) removing python-tomlkit                                                               [#######################################################] 100%
+( 5/71) removing python-tabulate                                                              [#######################################################] 100%
+( 6/71) removing python-ruamel-yaml                                                           [#######################################################] 100%
+( 7/71) removing python-ruamel.yaml.clib                                                      [#######################################################] 100%
+( 8/71) removing python-pygments                                                              [#######################################################] 100%
+( 9/71) removing python-pip                                                                   [#######################################################] 100%
+(10/71) removing python-toml                                                                  [#######################################################] 100%
+(11/71) removing python-retrying                                                              [#######################################################] 100%
+(12/71) removing python-resolvelib                                                            [#######################################################] 100%
+(13/71) removing python-pyopenssl                                                             [#######################################################] 100%
+(14/71) removing python-progress                                                              [#######################################################] 100%
+(15/71) removing python-pep517                                                                [#######################################################] 100%
+(16/71) removing python-tomli                                                                 [#######################################################] 100%
+(17/71) removing python-distro                                                                [#######################################################] 100%
+(18/71) removing python-distlib                                                               [#######################################################] 100%
+(19/71) removing python-jinja                                                                 [#######################################################] 100%
+(20/71) removing python-markupsafe                                                            [#######################################################] 100%
+(21/71) removing python-html5lib                                                              [#######################################################] 100%
+(22/71) removing python-webencodings                                                          [#######################################################] 100%
+(23/71) removing python-dephell-versioning                                                    [#######################################################] 100%
+(24/71) removing python-dephell-venvs                                                         [#######################################################] 100%
+(25/71) removing python-dephell-shells                                                        [#######################################################] 100%
+(26/71) removing python-shellingham                                                           [#######################################################] 100%
+(27/71) removing python-pexpect                                                               [#######################################################] 100%
+(28/71) removing python-ptyprocess                                                            [#######################################################] 100%
+(29/71) removing python-dephell-setuptools                                                    [#######################################################] 100%
+(30/71) removing python-dephell-pythons                                                       [#######################################################] 100%
+(31/71) removing python-dephell-markers                                                       [#######################################################] 100%
+(32/71) removing python-dephell-specifier                                                     [#######################################################] 100%
+(33/71) removing python-dephell-links                                                         [#######################################################] 100%
+(34/71) removing python-dephell-licenses                                                      [#######################################################] 100%
+(35/71) removing python-dephell-discover                                                      [#######################################################] 100%
+(36/71) removing python-dephell-changelogs                                                    [#######################################################] 100%
+(37/71) removing python-dephell-argparse                                                      [#######################################################] 100%
+(38/71) removing python-dephell-archive                                                       [#######################################################] 100%
+(39/71) removing python-cryptography                                                          [#######################################################] 100%
+(40/71) removing python-contextlib2                                                           [#######################################################] 100%
+(41/71) removing python-colorama                                                              [#######################################################] 100%
+(42/71) removing python-cffi                                                                  [#######################################################] 100%
+(43/71) removing python-pycparser                                                             [#######################################################] 100%
+(44/71) removing python-ply                                                                   [#######################################################] 100%
+(45/71) removing python-cerberus                                                              [#######################################################] 100%
+(46/71) removing python-cachecontrol                                                          [#######################################################] 100%
+(47/71) removing python-requests                                                              [#######################################################] 100%
+(48/71) removing python-urllib3                                                               [#######################################################] 100%
+(49/71) removing python-msgpack                                                               [#######################################################] 100%
+(50/71) removing python-bowler                                                                [#######################################################] 100%
+(51/71) removing python-sh                                                                    [#######################################################] 100%
+(52/71) removing python-setuptools                                                            [#######################################################] 100%
+(53/71) removing python-packaging                                                             [#######################################################] 100%
+(54/71) removing python-six                                                                   [#######################################################] 100%
+(55/71) removing python-pyparsing                                                             [#######################################################] 100%
+(56/71) removing python-ordered-set                                                           [#######################################################] 100%
+(57/71) removing python-more-itertools                                                        [#######################################################] 100%
+(58/71) removing python-fissix                                                                [#######################################################] 100%
+(59/71) removing python-click                                                                 [#######################################################] 100%
+(60/71) removing python-appdirs                                                               [#######################################################] 100%
+(61/71) removing python-aiohttp                                                               [#######################################################] 100%
+(62/71) removing python-yarl                                                                  [#######################################################] 100%
+(63/71) removing python-typing_extensions                                                     [#######################################################] 100%
+(64/71) removing python-idna                                                                  [#######################################################] 100%
+(65/71) removing python-multidict                                                             [#######################################################] 100%
+(66/71) removing python-chardet                                                               [#######################################################] 100%
+(67/71) removing python-attrs                                                                 [#######################################################] 100%
+(68/71) removing python-async-timeout                                                         [#######################################################] 100%
+(69/71) removing m2r                                                                          [#######################################################] 100%
+(70/71) removing python-mistune1                                                              [#######################################################] 100%
+(71/71) removing python-docutils                                                              [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package python-xdg with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) python-xdg-5.1.1-1
+
+Total Installed Size:  0.02 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing python-xdg                                                                   [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+python-xdg
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed python-xdg as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+     1	python3-memoizedb
+     2	python3-xcpf
+     3	pm2ml
+     4	python3-aur
+     5	pbget
+     6	powerpill
+     7	python3-colorsysplus
+
+Cloning into &apos;python3-memoizedb&apos;...
+remote: Enumerating objects: 60, done.
+remote: Counting objects: 100% (60/60), done.
+remote: Compressing objects: 100% (54/54), done.
+remote: Total 60 (delta 6), reused 60 (delta 6), pack-reused 0
+Unpacking objects: 100% (60/60), 17.39 KiB | 378.00 KiB/s, done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for python3-memoizedb.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency python3-memoizedb from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: python3-memoizedb 2017.3.30-5 (Sun Oct 31 17:04:40 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-memoizedb-2017.3.30.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11600  100 11600    0     0  60659      0 --:--:-- --:--:-- --:--:-- 60732
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-memoizedb-2017.3.30.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3483      0 --:--:-- --:--:-- --:--:--  3493
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    python3-memoizedb-2017.3.30.tar.xz ... Passed
+    python3-memoizedb-2017.3.30.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    python3-memoizedb-2017.3.30.tar.xz ... Passed
+    python3-memoizedb-2017.3.30.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    python3-memoizedb-2017.3.30.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting python3-memoizedb-2017.3.30.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+copying MemoizeDB.py -&gt; build/lib
+running install_lib
+creating /home/builduser/python3-memoizedb/pkg/python3-memoizedb/usr
+creating /home/builduser/python3-memoizedb/pkg/python3-memoizedb/usr/lib
+creating /home/builduser/python3-memoizedb/pkg/python3-memoizedb/usr/lib/python3.9
+creating /home/builduser/python3-memoizedb/pkg/python3-memoizedb/usr/lib/python3.9/site-packages
+copying build/lib/MemoizeDB.py -&gt; /home/builduser/python3-memoizedb/pkg/python3-memoizedb/usr/lib/python3.9/site-packages
+byte-compiling /home/builduser/python3-memoizedb/pkg/python3-memoizedb/usr/lib/python3.9/site-packages/MemoizeDB.py to MemoizeDB.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmpheilhydk.py&apos;
+/usr/sbin/python3 /tmp/tmpheilhydk.py
+removing /tmp/tmpheilhydk.py
+running install_egg_info
+Writing /home/builduser/python3-memoizedb/pkg/python3-memoizedb/usr/lib/python3.9/site-packages/MemoizeDB-2017.03.30.23.38.49-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;python3-memoizedb&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: python3-memoizedb 2017.3.30-5 (Sun Oct 31 17:04:42 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package python3-memoizedb with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) python3-memoizedb-2017.3.30-5
+
+Total Installed Size:  0.05 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing python3-memoizedb                                                            [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+python3-memoizedb
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed python3-memoizedb as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+     1	python3-xcpf
+     2	pm2ml
+     3	python3-aur
+     4	pbget
+     5	powerpill
+     6	python3-colorsysplus
+
+Cloning into &apos;python3-xcpf&apos;...
+remote: Enumerating objects: 140, done.
+remote: Counting objects: 100% (140/140), done.
+remote: Compressing objects: 100% (126/126), done.
+remote: Total 140 (delta 14), reused 140 (delta 14), pack-reused 0
+Receiving objects: 100% (140/140), 43.68 KiB | 217.00 KiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for python3-xcpf.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency python3-xcpf from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: python3-xcpf 2021-1 (Sun Oct 31 17:04:47 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing missing dependencies...</b>
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) pyalpm-0.10.6-1
+
+Total Installed Size:  0.17 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing pyalpm                                                                       [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-xcpf-2021.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 18296  100 18296    0     0  77147      0 --:--:-- --:--:-- --:--:-- 77525
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-xcpf-2021.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3550      0 --:--:-- --:--:-- --:--:--  3559
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    python3-xcpf-2021.tar.xz ... Passed
+    python3-xcpf-2021.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    python3-xcpf-2021.tar.xz ... Passed
+    python3-xcpf-2021.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    python3-xcpf-2021.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting python3-xcpf-2021.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/XCPF
+copying XCPF/common.py -&gt; build/lib/XCPF
+copying XCPF/PacmanConfig.py -&gt; build/lib/XCPF
+copying XCPF/ArchPkg.py -&gt; build/lib/XCPF
+copying XCPF/__init__.py -&gt; build/lib/XCPF
+running install_lib
+creating /home/builduser/python3-xcpf/pkg/python3-xcpf/usr
+creating /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib
+creating /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9
+creating /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages
+creating /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF
+copying build/lib/XCPF/common.py -&gt; /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF
+copying build/lib/XCPF/PacmanConfig.py -&gt; /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF
+copying build/lib/XCPF/ArchPkg.py -&gt; /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF
+copying build/lib/XCPF/__init__.py -&gt; /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF
+byte-compiling /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF/common.py to common.cpython-39.pyc
+byte-compiling /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF/PacmanConfig.py to PacmanConfig.cpython-39.pyc
+byte-compiling /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF/ArchPkg.py to ArchPkg.cpython-39.pyc
+byte-compiling /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF/__init__.py to __init__.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmp9tb8tdrc.py&apos;
+/usr/sbin/python3 /tmp/tmp9tb8tdrc.py
+removing /tmp/tmp9tb8tdrc.py
+running install_egg_info
+Writing /home/builduser/python3-xcpf/pkg/python3-xcpf/usr/lib/python3.9/site-packages/XCPF-2021.07.28.23.27.48-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;python3-xcpf&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: python3-xcpf 2021-1 (Sun Oct 31 17:04:50 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package python3-xcpf with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) python3-xcpf-2021-1
+
+Total Installed Size:  0.13 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing python3-xcpf                                                                 [#######################################################] 100%
+Optional dependencies for python3-xcpf
+    rsync: Retrieve ABS files via rsync.
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+python3-xcpf
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed python3-xcpf as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+     1	pm2ml
+     2	python3-aur
+     3	pbget
+     4	powerpill
+     5	python3-colorsysplus
+
+Cloning into &apos;pm2ml&apos;...
+remote: Enumerating objects: 124, done.
+remote: Counting objects: 100% (124/124), done.
+remote: Compressing objects: 100% (99/99), done.
+remote: Total 124 (delta 25), reused 124 (delta 25), pack-reused 0
+Receiving objects: 100% (124/124), 37.81 KiB | 282.00 KiB/s, done.
+Resolving deltas: 100% (25/25), done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for pm2ml.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency pm2ml from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: pm2ml 2021.8-1 (Sun Oct 31 17:04:55 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading pm2ml-2021.8.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 15292  100 15292    0     0  80025      0 --:--:-- --:--:-- --:--:-- 80484
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading pm2ml-2021.8.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3485      0 --:--:-- --:--:-- --:--:--  3472
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    pm2ml-2021.8.tar.xz ... Passed
+    pm2ml-2021.8.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    pm2ml-2021.8.tar.xz ... Passed
+    pm2ml-2021.8.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    pm2ml-2021.8.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting pm2ml-2021.8.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+copying pm2ml.py -&gt; build/lib
+running install_lib
+creating /home/builduser/pm2ml/pkg/pm2ml/usr
+creating /home/builduser/pm2ml/pkg/pm2ml/usr/lib
+creating /home/builduser/pm2ml/pkg/pm2ml/usr/lib/python3.9
+creating /home/builduser/pm2ml/pkg/pm2ml/usr/lib/python3.9/site-packages
+copying build/lib/pm2ml.py -&gt; /home/builduser/pm2ml/pkg/pm2ml/usr/lib/python3.9/site-packages
+byte-compiling /home/builduser/pm2ml/pkg/pm2ml/usr/lib/python3.9/site-packages/pm2ml.py to pm2ml.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmpyhly3bxu.py&apos;
+/usr/sbin/python3 /tmp/tmpyhly3bxu.py
+removing /tmp/tmpyhly3bxu.py
+running install_egg_info
+Writing /home/builduser/pm2ml/pkg/pm2ml/usr/lib/python3.9/site-packages/pm2ml-2021.08.02.18.55.00-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;pm2ml&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: pm2ml 2021.8-1 (Sun Oct 31 17:04:58 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package pm2ml with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) pm2ml-2021.8-1
+
+Total Installed Size:  0.08 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing pm2ml                                                                        [#######################################################] 100%
+Optional dependencies for pm2ml
+    aria2: ppl script support.
+    python3-aur: AUR support
+    reflector: Reflector support
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+pm2ml
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed pm2ml as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+     1	python3-aur
+     2	pbget
+     3	powerpill
+     4	python3-colorsysplus
+
+Cloning into &apos;python3-aur&apos;...
+remote: Enumerating objects: 144, done.
+remote: Counting objects: 100% (144/144), done.
+remote: Compressing objects: 100% (116/116), done.
+remote: Total 144 (delta 28), reused 144 (delta 28), pack-reused 0
+Receiving objects: 100% (144/144), 44.22 KiB | 224.00 KiB/s, done.
+Resolving deltas: 100% (28/28), done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for python3-aur.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency python3-aur from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: python3-aur 2020.12.15-3 (Sun Oct 31 17:05:02 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-aur-2020.12.15.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 22072  100 22072    0     0   105k      0 --:--:-- --:--:-- --:--:--  106k
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-aur-2020.12.15.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3307      0 --:--:-- --:--:-- --:--:--  3329
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    python3-aur-2020.12.15.tar.xz ... Passed
+    python3-aur-2020.12.15.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    python3-aur-2020.12.15.tar.xz ... Passed
+    python3-aur-2020.12.15.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    python3-aur-2020.12.15.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting python3-aur-2020.12.15.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/AUR
+copying AUR/PkgList.py -&gt; build/lib/AUR
+copying AUR/SRCINFO.py -&gt; build/lib/AUR
+copying AUR/AurPkg.py -&gt; build/lib/AUR
+copying AUR/RPC.py -&gt; build/lib/AUR
+copying AUR/Aurtomatic.py -&gt; build/lib/AUR
+copying AUR/common.py -&gt; build/lib/AUR
+copying AUR/__init__.py -&gt; build/lib/AUR
+running build_scripts
+creating build/scripts-3.9
+copying and adjusting aurpkglist -&gt; build/scripts-3.9
+copying and adjusting aurploader -&gt; build/scripts-3.9
+copying and adjusting aurquery -&gt; build/scripts-3.9
+copying and adjusting aurtomatic -&gt; build/scripts-3.9
+copying and adjusting aurtus -&gt; build/scripts-3.9
+changing mode of build/scripts-3.9/aurpkglist from 644 to 755
+changing mode of build/scripts-3.9/aurploader from 644 to 755
+changing mode of build/scripts-3.9/aurquery from 644 to 755
+changing mode of build/scripts-3.9/aurtomatic from 644 to 755
+changing mode of build/scripts-3.9/aurtus from 644 to 755
+running install_lib
+creating /home/builduser/python3-aur/pkg/python3-aur/usr
+creating /home/builduser/python3-aur/pkg/python3-aur/usr/lib
+creating /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9
+creating /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages
+creating /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR
+copying build/lib/AUR/PkgList.py -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR
+copying build/lib/AUR/SRCINFO.py -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR
+copying build/lib/AUR/AurPkg.py -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR
+copying build/lib/AUR/RPC.py -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR
+copying build/lib/AUR/Aurtomatic.py -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR
+copying build/lib/AUR/common.py -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR
+copying build/lib/AUR/__init__.py -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR
+byte-compiling /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR/PkgList.py to PkgList.cpython-39.pyc
+byte-compiling /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR/SRCINFO.py to SRCINFO.cpython-39.pyc
+byte-compiling /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR/AurPkg.py to AurPkg.cpython-39.pyc
+byte-compiling /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR/RPC.py to RPC.cpython-39.pyc
+byte-compiling /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR/Aurtomatic.py to Aurtomatic.cpython-39.pyc
+byte-compiling /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR/common.py to common.cpython-39.pyc
+byte-compiling /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR/__init__.py to __init__.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmpbd3h9cpj.py&apos;
+/usr/sbin/python3 /tmp/tmpbd3h9cpj.py
+removing /tmp/tmpbd3h9cpj.py
+running install_scripts
+creating /home/builduser/python3-aur/pkg/python3-aur/usr/bin
+copying build/scripts-3.9/aurtus -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/bin
+copying build/scripts-3.9/aurtomatic -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/bin
+copying build/scripts-3.9/aurpkglist -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/bin
+copying build/scripts-3.9/aurploader -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/bin
+copying build/scripts-3.9/aurquery -&gt; /home/builduser/python3-aur/pkg/python3-aur/usr/bin
+changing mode of /home/builduser/python3-aur/pkg/python3-aur/usr/bin/aurtus to 755
+changing mode of /home/builduser/python3-aur/pkg/python3-aur/usr/bin/aurtomatic to 755
+changing mode of /home/builduser/python3-aur/pkg/python3-aur/usr/bin/aurpkglist to 755
+changing mode of /home/builduser/python3-aur/pkg/python3-aur/usr/bin/aurploader to 755
+changing mode of /home/builduser/python3-aur/pkg/python3-aur/usr/bin/aurquery to 755
+running install_egg_info
+Writing /home/builduser/python3-aur/pkg/python3-aur/usr/lib/python3.9/site-packages/AUR-2020.12.15.04.18.39-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;python3-aur&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: python3-aur 2020.12.15-3 (Sun Oct 31 17:05:06 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package python3-aur with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) python3-aur-2020.12.15-3
+
+Total Installed Size:  0.14 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing python3-aur                                                                  [#######################################################] 100%
+Optional dependencies for python3-aur
+    curl: Aurploader support [installed]
+    git: Clone AUR Git repositories.
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+python3-aur
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed python3-aur as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+     1	pbget
+     2	powerpill
+     3	python3-colorsysplus
+
+Cloning into &apos;pbget&apos;...
+remote: Enumerating objects: 76, done.
+remote: Counting objects: 100% (76/76), done.
+remote: Compressing objects: 100% (74/74), done.
+remote: Total 76 (delta 2), reused 76 (delta 2), pack-reused 0
+Unpacking objects: 100% (76/76), 25.90 KiB | 530.00 KiB/s, done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for pbget.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency pbget from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: pbget 2021.7-1 (Sun Oct 31 17:05:10 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing missing dependencies...</b>
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (4) perl-error-0.17029-3  perl-mailtools-2.21-5  perl-timedate-2.33-3  git-2.33.1-1
+
+Total Installed Size:  32.57 MiB
+
+:: Proceed with installation? [Y/n] 
+(4/4) checking keys in keyring                                                                [#######################################################] 100%
+(4/4) checking package integrity                                                              [#######################################################] 100%
+(4/4) loading package files                                                                   [#######################################################] 100%
+(4/4) checking for file conflicts                                                             [#######################################################] 100%
+(4/4) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/4) installing perl-error                                                                   [#######################################################] 100%
+(2/4) installing perl-timedate                                                                [#######################################################] 100%
+(3/4) installing perl-mailtools                                                               [#######################################################] 100%
+(4/4) installing git                                                                          [#######################################################] 100%
+Optional dependencies for git
+    tk: gitk and git gui
+    perl-libwww: git svn
+    perl-term-readkey: git svn and interactive.singlekey setting
+    perl-io-socket-ssl: git send-email TLS support
+    perl-authen-sasl: git send-email TLS support
+    perl-mediawiki-api: git mediawiki support
+    perl-datetime-format-iso8601: git mediawiki support
+    perl-lwp-protocol-https: git mediawiki https support
+    perl-cgi: gitweb (web interface) support
+    python: git svn &amp; git p4 [installed]
+    subversion: git svn
+    org.freedesktop.secrets: keyring credential helper
+    libsecret: libsecret credential helper [installed]
+:: Running post-transaction hooks...
+(1/4) Creating system user accounts...
+(2/4) Reloading system manager configuration...
+  Skipped: Current root is not booted.
+(3/4) Arming ConditionNeedsUpdate...
+(4/4) Warn about old perl modules
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading pbget-2021.7.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11756  100 11756    0     0  63155      0 --:--:-- --:--:-- --:--:-- 63204
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading pbget-2021.7.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3419      0 --:--:-- --:--:-- --:--:--  3430
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    pbget-2021.7.tar.xz ... Passed
+    pbget-2021.7.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    pbget-2021.7.tar.xz ... Passed
+    pbget-2021.7.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    pbget-2021.7.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting pbget-2021.7.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+copying pbget.py -&gt; build/lib
+running build_scripts
+creating build/scripts-3.9
+copying and adjusting pbget -&gt; build/scripts-3.9
+changing mode of build/scripts-3.9/pbget from 644 to 755
+running install_lib
+creating /home/builduser/pbget/pkg/pbget/usr
+creating /home/builduser/pbget/pkg/pbget/usr/lib
+creating /home/builduser/pbget/pkg/pbget/usr/lib/python3.9
+creating /home/builduser/pbget/pkg/pbget/usr/lib/python3.9/site-packages
+copying build/lib/pbget.py -&gt; /home/builduser/pbget/pkg/pbget/usr/lib/python3.9/site-packages
+byte-compiling /home/builduser/pbget/pkg/pbget/usr/lib/python3.9/site-packages/pbget.py to pbget.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmph09_4yrs.py&apos;
+/usr/sbin/python3 /tmp/tmph09_4yrs.py
+removing /tmp/tmph09_4yrs.py
+running install_scripts
+creating /home/builduser/pbget/pkg/pbget/usr/bin
+copying build/scripts-3.9/pbget -&gt; /home/builduser/pbget/pkg/pbget/usr/bin
+changing mode of /home/builduser/pbget/pkg/pbget/usr/bin/pbget to 755
+running install_egg_info
+Writing /home/builduser/pbget/pkg/pbget/usr/lib/python3.9/site-packages/pbget-2021.07.28.23.23.51-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;pbget&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: pbget 2021.7-1 (Sun Oct 31 17:05:14 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package pbget with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) pbget-2021.7-1
+
+Total Installed Size:  0.02 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing pbget                                                                        [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+pbget
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed pbget as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+     1	powerpill
+     2	python3-colorsysplus
+
+Cloning into &apos;powerpill&apos;...
+remote: Enumerating objects: 136, done.
+remote: Counting objects: 100% (136/136), done.
+remote: Compressing objects: 100% (112/112), done.
+remote: Total 136 (delta 24), reused 136 (delta 24), pack-reused 0
+Receiving objects: 100% (136/136), 43.94 KiB | 220.00 KiB/s, done.
+Resolving deltas: 100% (24/24), done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for powerpill.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency powerpill from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: powerpill 2020.12.15-2 (Sun Oct 31 17:05:19 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing missing dependencies...</b>
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (2) c-ares-1.18.1-1  aria2-1.36.0-1
+
+Total Installed Size:  6.09 MiB
+
+:: Proceed with installation? [Y/n] 
+(2/2) checking keys in keyring                                                                [#######################################################] 100%
+(2/2) checking package integrity                                                              [#######################################################] 100%
+(2/2) loading package files                                                                   [#######################################################] 100%
+(2/2) checking for file conflicts                                                             [#######################################################] 100%
+(2/2) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/2) installing c-ares                                                                       [#######################################################] 100%
+(2/2) installing aria2                                                                        [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading powerpill-2020.12.15.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 23764  100 23764    0     0  96058      0 --:--:-- --:--:-- --:--:-- 95822
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading powerpill-2020.12.15.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3494      0 --:--:-- --:--:-- --:--:--  3515
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    powerpill-2020.12.15.tar.xz ... Passed
+    powerpill-2020.12.15.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    powerpill-2020.12.15.tar.xz ... Passed
+    powerpill-2020.12.15.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    powerpill-2020.12.15.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting powerpill-2020.12.15.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+copying Powerpill.py -&gt; build/lib
+running build_scripts
+creating build/scripts-3.9
+copying and adjusting powerpill -&gt; build/scripts-3.9
+changing mode of build/scripts-3.9/powerpill from 644 to 755
+running install_lib
+creating /home/builduser/powerpill/pkg/powerpill/usr
+creating /home/builduser/powerpill/pkg/powerpill/usr/lib
+creating /home/builduser/powerpill/pkg/powerpill/usr/lib/python3.9
+creating /home/builduser/powerpill/pkg/powerpill/usr/lib/python3.9/site-packages
+copying build/lib/Powerpill.py -&gt; /home/builduser/powerpill/pkg/powerpill/usr/lib/python3.9/site-packages
+byte-compiling /home/builduser/powerpill/pkg/powerpill/usr/lib/python3.9/site-packages/Powerpill.py to Powerpill.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmp91zjh587.py&apos;
+/usr/sbin/python3 /tmp/tmp91zjh587.py
+removing /tmp/tmp91zjh587.py
+running install_scripts
+creating /home/builduser/powerpill/pkg/powerpill/usr/bin
+copying build/scripts-3.9/powerpill -&gt; /home/builduser/powerpill/pkg/powerpill/usr/bin
+changing mode of /home/builduser/powerpill/pkg/powerpill/usr/bin/powerpill to 755
+running install_egg_info
+Writing /home/builduser/powerpill/pkg/powerpill/usr/lib/python3.9/site-packages/Powerpill-2020.12.15.04.30.26-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;powerpill&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: powerpill 2020.12.15-2 (Sun Oct 31 17:05:23 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package powerpill with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) powerpill-2020.12.15-2
+
+Total Installed Size:  0.09 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing powerpill                                                                    [#######################################################] 100%
+Optional dependencies for powerpill
+    python3-threaded_servers: internal Pacserve support
+    reflector: Reflector and Rsync support
+    rsync: Rsync download support
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+powerpill
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed powerpill as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+     1	python3-colorsysplus
+
+Cloning into &apos;python3-colorsysplus&apos;...
+remote: Enumerating objects: 56, done.
+remote: Counting objects: 100% (56/56), done.
+remote: Compressing objects: 100% (54/54), done.
+remote: Total 56 (delta 2), reused 56 (delta 2), pack-reused 0
+Unpacking objects: 100% (56/56), 18.80 KiB | 350.00 KiB/s, done.
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Fetching pgp key for python3-colorsysplus.
+
+gpg: key 1D1F0DC78F173680: &quot;Xyne. (key #3) &lt;xyne@archlinux.ca&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Building/installing AUR dependency python3-colorsysplus from scratch.
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: python3-colorsysplus 2021.1-1 (Sun Oct 31 17:05:28 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-colorsysplus-2021.1.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 20532  100 20532    0     0   101k      0 --:--:-- --:--:-- --:--:--  101k
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading python3-colorsysplus-2021.1.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3159      0 --:--:-- --:--:-- --:--:--  3162
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    python3-colorsysplus-2021.1.tar.xz ... Passed
+    python3-colorsysplus-2021.1.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    python3-colorsysplus-2021.1.tar.xz ... Passed
+    python3-colorsysplus-2021.1.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    python3-colorsysplus-2021.1.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting python3-colorsysplus-2021.1.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/colorsysplus
+copying colorsysplus/__main__.py -&gt; build/lib/colorsysplus
+copying colorsysplus/format.py -&gt; build/lib/colorsysplus
+copying colorsysplus/log.py -&gt; build/lib/colorsysplus
+copying colorsysplus/text.py -&gt; build/lib/colorsysplus
+copying colorsysplus/__init__.py -&gt; build/lib/colorsysplus
+running install_lib
+creating /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr
+creating /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib
+creating /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9
+creating /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages
+creating /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus
+copying build/lib/colorsysplus/__main__.py -&gt; /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus
+copying build/lib/colorsysplus/format.py -&gt; /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus
+copying build/lib/colorsysplus/log.py -&gt; /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus
+copying build/lib/colorsysplus/text.py -&gt; /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus
+copying build/lib/colorsysplus/__init__.py -&gt; /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus
+byte-compiling /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus/__main__.py to __main__.cpython-39.pyc
+byte-compiling /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus/format.py to format.cpython-39.pyc
+byte-compiling /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus/log.py to log.cpython-39.pyc
+byte-compiling /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus/text.py to text.cpython-39.pyc
+byte-compiling /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus/__init__.py to __init__.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmptosbi9a8.py&apos;
+/usr/sbin/python3 /tmp/tmptosbi9a8.py
+removing /tmp/tmptosbi9a8.py
+running install_egg_info
+Writing /home/builduser/python3-colorsysplus/pkg/python3-colorsysplus/usr/lib/python3.9/site-packages/colorsysplus-2021.01.02.08.04.11-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;python3-colorsysplus&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: python3-colorsysplus 2021.1-1 (Sun Oct 31 17:05:31 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Installing package python3-colorsysplus with pacman -U...</b>
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) python3-colorsysplus-2021.1-1
+
+Total Installed Size:  0.15 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                [#######################################################] 100%
+(1/1) checking package integrity                                                              [#######################################################] 100%
+(1/1) loading package files                                                                   [#######################################################] 100%
+(1/1) checking for file conflicts                                                             [#######################################################] 100%
+(1/1) checking available disk space                                                           [#######################################################] 100%
+:: Processing package changes...
+(1/1) installing python3-colorsysplus                                                         [#######################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+python3-colorsysplus
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font>  Installed python3-colorsysplus as an AUR dependency in chroot.
+
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Remaining AUR dependencies: 
+
+
+<font color="#55FF55"><b>==&gt;</b></font><b> Making package: bauerbill 2020-2 (Sun Oct 31 17:05:33 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking runtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking buildtime dependencies...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Retrieving sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading bauerbill-2020.tar.xz...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 33956  100 33956    0     0   159k      0 --:--:-- --:--:-- --:--:--  160k
+<font color="#5555FF"><b>  -&gt;</b></font><b> Downloading bauerbill-2020.tar.xz.sig...</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   566  100   566    0     0   3556      0 --:--:-- --:--:-- --:--:--  3582
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with md5sums...</b>
+    bauerbill-2020.tar.xz ... Passed
+    bauerbill-2020.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Validating source files with sha512sums...</b>
+    bauerbill-2020.tar.xz ... Passed
+    bauerbill-2020.tar.xz.sig ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Verifying source file signatures with gpg...</b>
+    bauerbill-2020.tar.xz ... Passed
+<font color="#55FF55"><b>==&gt;</b></font><b> Extracting sources...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Extracting bauerbill-2020.tar.xz with bsdtar</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Entering fakeroot environment...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Starting package()...</b>
+running install
+running build
+running build_py
+creating build
+creating build/lib
+copying Bauerbill.py -&gt; build/lib
+running build_scripts
+creating build/scripts-3.9
+copying and adjusting bauerbill -&gt; build/scripts-3.9
+copying and adjusting bb-query_trust -&gt; build/scripts-3.9
+changing mode of build/scripts-3.9/bauerbill from 644 to 755
+changing mode of build/scripts-3.9/bb-query_trust from 644 to 755
+running install_lib
+creating /home/builduser/bauerbill/pkg/bauerbill/usr
+creating /home/builduser/bauerbill/pkg/bauerbill/usr/lib
+creating /home/builduser/bauerbill/pkg/bauerbill/usr/lib/python3.9
+creating /home/builduser/bauerbill/pkg/bauerbill/usr/lib/python3.9/site-packages
+copying build/lib/Bauerbill.py -&gt; /home/builduser/bauerbill/pkg/bauerbill/usr/lib/python3.9/site-packages
+byte-compiling /home/builduser/bauerbill/pkg/bauerbill/usr/lib/python3.9/site-packages/Bauerbill.py to Bauerbill.cpython-39.pyc
+writing byte-compilation script &apos;/tmp/tmpxu3uc_ih.py&apos;
+/usr/sbin/python3 /tmp/tmpxu3uc_ih.py
+removing /tmp/tmpxu3uc_ih.py
+running install_scripts
+creating /home/builduser/bauerbill/pkg/bauerbill/usr/bin
+copying build/scripts-3.9/bauerbill -&gt; /home/builduser/bauerbill/pkg/bauerbill/usr/bin
+copying build/scripts-3.9/bb-query_trust -&gt; /home/builduser/bauerbill/pkg/bauerbill/usr/bin
+changing mode of /home/builduser/bauerbill/pkg/bauerbill/usr/bin/bauerbill to 755
+changing mode of /home/builduser/bauerbill/pkg/bauerbill/usr/bin/bb-query_trust to 755
+running install_egg_info
+Writing /home/builduser/bauerbill/pkg/bauerbill/usr/lib/python3.9/site-packages/Bauerbill-2020.12.15.04.37.47-py3.9.egg-info
+<font color="#55FF55"><b>==&gt;</b></font><b> Tidying install...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing libtool files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Purging unwanted files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Removing static library files...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Stripping unneeded symbols from binaries and libraries...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing man and info pages...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Checking for packaging issues...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Creating package &quot;bauerbill&quot;...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .PKGINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .BUILDINFO file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Generating .MTREE file...</b>
+<font color="#5555FF"><b>  -&gt;</b></font><b> Compressing package...</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Leaving fakeroot environment.</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Finished making: bauerbill 2020-2 (Sun Oct 31 17:05:36 2021)</b>
+<font color="#55FF55"><b>==&gt;</b></font><b> Cleaning up...</b>
+
+<font color="#55FFFF"><b>:: aurch ==&gt;</b></font> Path to new pkg/s: /home/jeff/Testing/5/chroot-61O/build/bauerbill-2020-2-any.pkg.tar.zst
+
+</pre>
+</font>
+</body>
