@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>**Cody's Linux Blog**</title>
+        <title>**Cody's Linux Blog Test Run**</title>
         <meta charset='utf-8'/>
         <link rel="stylesheet" type="text/css" href="./testio.html_files/github-markdown.css">
         <style>
@@ -37,12 +37,14 @@
         <article class="markdown-body">
             <p><body bgcolor="#002B36"></p>
 <p><font color="#6E8992"></p>
-<h2 id="-cody-s-linux-blog"><strong>Cody&#39;s Linux Blog</strong></h2>
+<h2 id="-cody-s-linux-blog-test-run"><strong>Cody&#39;s Linux Blog Test Run</strong></h2>
 <p><img src="testio.html_files/images/ls.png" alt="alt text">
-Tried using jeykll on Arch Linux to make a static page for github pages (here). What a pain in the ass of version incompatibilities. Tell us what Linux distro to use github! Be easy to spin up a container with Debian, Centos, or whatever to work with jeykell. Guess I&#39;d have to learn Ruby for jekyll be a reasonably useful platform on Arch. If I was going to learn a second scripting language, I think python would be a more likely candidate, or skip the scripting languages all together and move onto a compiled language. I&#39;m trying the abricotine markdown editor as a test. Seems spell check is obviously not working. </p>
-<p>Getting off to a really bad start with this markdown editor! The top menu disappeared as I  was trying to explore, and this thing did a vim, &quot;fuckoff newb&quot; on me! I&#39;m off to check out alternatives that can spellcheck and don&#39;t have a vim trap built in!<br></p>
-<p>Straight up markdown is going to work great for what I had in mind. Just need to find a markdown editor I get along with.</p>
-<p>This is a bit of recent code I wrote for aurch, cause..., I want to see how code looks in the markdown. This code checks the host for AUR updates.</p>
+Tried using jeykll on Arch Linux to make a static webpage for github pages (here). What a pain in the ass of version incompatibilities. Tell us what Linux distro to use github! Be easy enough to spin up a container with Debian, Centos, or whatever to work with jeykell, rather than spend the next week figuring this all out.</p>
+<p>Guess I&#39;ll have to learn Ruby for jekyll be a reasonably useful platform on Arch. If I was going to learn a second scripting language, python would be a more likely candidate, or how about skipping the scripting languages all together and move onto a compiled language. OK, I just want a damn static html page, and don&#39;t want to learn a new language to do it! There has to be a simpler solution to this. So....</p>
+<p>I&#39;m trying the abricotine markdown editor as a test. Seems spell check is obviously not working, and we&#39;re getting off to a really bad start! The top menu disappeared as I was exploring settings for spell check, and this thing did the well known vim trap of, &quot;fuck off newb&quot; on me! I didn&#39;t have to pull the power cord this time, but I did have to delete the config directory, start a fresh instance, read the keyboard shortcuts, and apply them to the instance I was editing this on. So... </p>
+<p>I&#39;m off to check out alternatives that can spellcheck and don&#39;t have a vim trap built in! Or read a bit more about how to use abri-contin. I&#39;ll remember the name though the similarity to oxy-contin.<br></p>
+<p>Seeme straight up markdown is going to work great for what I had in mind. Just need to find a markdown editor I get along with long term.</p>
+<p>This is a bit of recent code I wrote for aurch, cause..., I want to see how code looks in the markdown. This bit of code checks the host for AUR updates.</p>
 <pre><code>readarray -t aurpkgs &lt; &lt;(pacman -Sl ${REPONAME} 2&gt;/dev/null | awk &#39;{print $2,$3}&#39; ; pacman -Qm )
 if    [[ $1 == -Luhq ]]; then    :
     else
