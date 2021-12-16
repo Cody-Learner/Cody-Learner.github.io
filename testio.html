@@ -39,10 +39,10 @@
 <p><font color="#6E8992"></p>
 <h2 id="-cody-s-linux-blog"><strong>Cody&#39;s Linux Blog</strong></h2>
 <p><img src="testio.html_files/images/ls.png" alt="alt text">
-Tried using jeykll on Arch linux to make a static page for github pages (here). What a pain in the ass with version incompatibilities. Guess I&#39;d have to learn Ruby for having jekyll be a reasonablly useful platform. If I was going to learn a second scripting language, I would think possibly python, or skip scripting languagea all together and move onto a compiled language. I&#39;m trying the abricotine markdown editor as a test. Seems spell check is obviously not working. </p>
-<p>Getting off to a really bad start with this markdown editor! The top menu disapeared as I  was trying to explore... and this thing did a vim &#39;fuck you newb&#39; on me! I&#39;m off to check out alternatives that can spellcheck and don&#39;t have a vim trap built in!<br></p>
-<p>Straight up markdown is going to work great for what I had in mind. Just need to find an editor I get along with...</p>
-<p>This is a bit of recent code I wrote for aurch, cause, you know, I want to check how code looks. This checks the host for AUR updates.</p>
+Tried using jeykll on Arch Linux to make a static page for github pages (here). What a pain in the ass of version incompatibilities. Tell us what Linux distro to use github! Be easy to spin up a container with Debian, Centos, or whatever to work with jeykell. Guess I&#39;d have to learn Ruby for jekyll be a reasonably useful platform on Arch. If I was going to learn a second scripting language, I think python would be a more likely candidate, or skip the scripting languages all together and move onto a compiled language. I&#39;m trying the abricotine markdown editor as a test. Seems spell check is obviously not working. </p>
+<p>Getting off to a really bad start with this markdown editor! The top menu disappeared as I  was trying to explore, and this thing did a vim, &quot;fuckoff newb&quot; on me! I&#39;m off to check out alternatives that can spellcheck and don&#39;t have a vim trap built in!<br></p>
+<p>Straight up markdown is going to work great for what I had in mind. Just need to find a markdown editor I get along with.</p>
+<p>This is a bit of recent code I wrote for aurch, cause..., I want to see how code looks in the markdown. This code checks the host for AUR updates.</p>
 <pre><code>readarray -t aurpkgs &lt; &lt;(pacman -Sl ${REPONAME} 2&gt;/dev/null | awk &#39;{print $2,$3}&#39; ; pacman -Qm )
 if    [[ $1 == -Luhq ]]; then    :
     else
