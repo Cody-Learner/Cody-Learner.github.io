@@ -1,5 +1,7 @@
 ## Cody-Learner.github.io
 
-A static html website. URL is: https://cody-learner.github.io/index.html
+Github pages, what a cool feature!
 
-May do something with this in the future.
+An image server: https://cody-learner.github.io/index.html
+
+Static site blog: https://cody-learner.github.io/github-static.html
