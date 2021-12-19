@@ -1,87 +1,111 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <title>**Cody's Linux Blog Test Run**</title>
-        <meta charset='utf-8'/>
-        <link rel="stylesheet" type="text/css" href="./github-static.html_files/github-markdown.css">
-        <style>
-            .markdown-body {
-                box-sizing: border-box;
-                min-width: 200px;
-                max-width: 1100px;
-                margin: 0 auto;
-                padding: 45px;
-            }
-        </style>
-        <script>
-            window.onload = function() {
-                if (document.querySelector("script[type=\"math/tex; mode=display\"]") !== null) {
-                    var mathjax = document.createElement("script");
-                    mathjax.src = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML";
-                    document.head.appendChild(mathjax);
-                }
-                if (document.getElementsByTagName("code").length !== 0) {
-                    var highlight = document.createElement("script");
-                    var highlightcss = document.createElement("link");
-                    highlight.src = "http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js";
-                    highlightcss.rel = "stylesheet";
-                    highlightcss.href = "http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/github.min.css";
-                    highlight.onload = function() {hljs.initHighlighting();};
-                    document.head.appendChild(highlight);
-                    document.head.appendChild(highlightcss);
-                }
-            }
-        </script>
-    </head>
-    <body>
-        <article class="markdown-body">
-            <p><body bgcolor="#002B36"></p>
-<p><font color="#6E8992"></p>
-<h2 id="-cody-s-linux-blog-test-run"><strong>Cody&#39;s Linux Blog Test Run</strong></h2>
-<p><img src="github-static.html_files/images/SC2015.png" alt="alt text">
-Tried using jeykll on Arch Linux to make a static webpage for github pages (here). What a pain in the ass of version incompatibilities. Tell us what Linux distro to use github! Be easy enough to spin up a container with Debian, Centos, or whatever to work with jeykell, rather than spend the next week figuring this all out.</p>
-<p>Guess I&#39;ll have to learn Ruby for jekyll be a reasonably useful platform on Arch. If I was going to learn a second scripting language, python would be a more likely candidate, or how about skipping the scripting languages all together and move onto a compiled language. OK, I just want a damn static html page, and don&#39;t want to learn a new language to do it! Took me 10 g-dam years to be able to hack together a bash script, and that wasn&#39;t having to learn a scripting language, it was learning how to use linux, and writing it down! There has to be a simpler solution to this. So....</p>
-<p>I&#39;m trying the abricotine markdown editor as a test. Seems spell check is obviously not working, and we&#39;re getting off to a really bad start! The top menu disappeared as I was exploring settings for spell check, and this thing did the well known vim trap of, &quot;fuck off newb&quot; on me! I didn&#39;t have to pull the power cord this time, but I did have to delete the config directory, start a fresh instance, read the keyboard shortcuts, and apply them to the instance I was editing this on. So... </p>
-<p>I&#39;m off to check out alternatives that can spellcheck and don&#39;t have a vim trap built in! Or read a bit more about how to use abri-contin. I&#39;ll remember the name though the similarity to oxy-contin.<br></p>
-<p>Seeme straight up markdown is going to work great for what I had in mind. Just need to find a markdown editor I get along with long term.</p>
-<p>This is a bit of recent code I wrote for aurch, cause..., I want to see how code looks in the markdown. This bit of code checks the host for AUR updates.</p>
-<pre><code>readarray -t aurpkgs &lt; &lt;(pacman -Sl ${REPONAME} 2&gt;/dev/null | awk &#39;{print $2,$3}&#39; ; pacman -Qm )
-if    [[ $1 == -Luhq ]]; then    :
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Made with Remarkable!
+  </title>
+  <link href="/usr/share/remarkable/media/highlightjs.default.min.css" rel="stylesheet"/>
+  <style type="text/css">
+   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);body{padding:20px;color:#fff;font-size:15px;font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;background:#5c5146;-webkit-font-smoothing:antialiased}a{color:#e5b931}a:hover{color:#ebc85e}h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-1px}h2{border-bottom:1px solid #796a5c;line-height:1.7em}h6{color:#777}hr{border:1px solid #3f3730}p{line-height:19px}p>code{font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;color:#e86741;font-size:.9em}pre>code{font-size:1em;font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;letter-spacing:-1px;font-weight:400}blockquote{border-left:4px solid #4e443b;padding:0 15px;font-style:italic;color:#e86741}table{background-color:#564c42}table tr td,table tr th{border:1px solid #3f3730}table tr:nth-child(2n){background-color:#4e443b}
+  </style>
+ </head>
+ <body>
+  <h1>
+   <strong>
+    Cody Learner
+   </strong>
+  </h1>
+  <p>
+   <img alt="https://github.com/Cody-Learner!" src="/home/jeff/doc5.png" title="Examples"/>
+  </p>
+  <p>
+   <strong>
+    Sunday, 19. December 2021
+   </strong>
+  </p>
+  <p>
+   After a few years of using github and github.io for terminal screenshots and images, thought I'd look into taking advantage of the github.io to set up a static web page.
+  </p>
+  <p>
+   I learned that jekyll seemed to be the go to tool for the job, so without hesitation, I dove into installing it without knowing anything about it.* After struggling with version incompatibilities, (github is only compatible with an older version than Arch has available in the official repos), I learned a markdown editor would suffice.
+  </p>
+  <p>
+   Next I tried a few markdown editors and ended up settling on
+   <a href="http://remarkableapp.github.io/linux.html">
+    remarkable
+   </a>
+   . I installed the git version from the AUR repos,
+   <a href="https://aur.archlinux.org/packages/remarkable-git/">
+    remarkable-git
+   </a>
+   using my home grown AUR helper
+   <a href="https://github.com/Cody-Learner/aurch">
+    aurch
+   </a>
+   to build and install it.
+  </p>
+  <p>
+   Remarkable won me over with it's nice usable GUI layout, live preview, and page style options. It has a handful of style options built in, which include 'Github' and 'Metro Vibes Dark'. This means I can use it for both my github README markup and this page. I've struggled for years with the github README.md because I didn't want to use the right tool for the job, a markdown editor. Instead, I used my browser for 'after view' after posting it on github. This process usually ended with dozens of edits, going through the whole git and upload process each time an edit was needed, and burned up a bunch of time in the process.
+  </p>
+  <p>
+   * I've since learned there's an AUR version. I may look into that as well.
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   This is a bit of recent code I recently wrote for aurch. This code checks the host for AUR updates. I'm posting it as a preview, so I can see how code looks in the markdown. I notice the original indentation is lost in the process. It replaces my preferential use of tabs with more common four spaces.
+  </p>
+  <pre><code>check_host_updates(){
+
+    readarray -t aurpkgs &lt; &lt;(pacman -Sl ${REPONAME} 2&gt;/dev/null | awk '{print $2,$3}' ; pacman -Qm )
+if  [[ $1 == -Luhq ]]; then :
     else
-    echo; echo &quot;${czm} Checking for updates:&quot;
-    printf &#39;%s\n&#39; &quot;${aurpkgs[@]%&#39; &#39;*}&quot; | nl | column -t
+    echo; echo "${czm} Checking for updates:"
+    printf '%s\n' "${aurpkgs[@]%' '*}" | nl | column -t
 fi
     rm -f /tmp/aurch-updates /tmp/aurch-updates-newer
 
-for pkg in &quot;${aurpkgs[@]}&quot;; do {
+for pkg in "${aurpkgs[@]}"; do {
 
-        pckg=&quot;${pkg%&#39; &#39;*}&quot;    
-    check=$(curl --compressed -s &quot;https://aur.archlinux.org/rpc/?v=5\&amp;type=info&amp;arg\[\]=${pckg}&quot; \
+        pckg="${pkg%' '*}"  
+    check=$(curl --compressed -s "https://aur.archlinux.org/rpc/?v=5\&amp;type=info&amp;arg\[\]=${pckg}" \
         | jshon -e results -a -e  Version \
-        | awk -F\&quot; &#39;{print $2}&#39;)
-    compare=$(vercmp &quot;${pkg#*&#39; &#39;}&quot; &quot;${check}&quot;)
+        | awk -F\" '{print $2}')
+    compare=$(vercmp "${pkg#*' '}" "${check}")
 
-    if    [[ -n  ${check} &amp;&amp; ${compare} == -1 ]]; then
-        echo &quot;${pkg} -&gt; ${check}&quot; &gt;&gt;/tmp/aurch-updates
+    if  [[ -n  ${check} &amp;&amp; ${compare} == -1 ]]; then
+        echo "${pkg} -&gt; ${check}" &gt;&gt;/tmp/aurch-updates
         elif    [[ -n  ${check} &amp;&amp;  ${compare} == 1 ]]; then
-            echo &quot;${pkg} &lt;- ${check}&quot; &gt;&gt;/tmp/aurch-updates-newer
+            echo "${pkg} &lt;- ${check}" &gt;&gt;/tmp/aurch-updates-newer
     fi } &amp;
 
 done; wait
 
-if    [[ $1 == -Luhq ]]; then
-    awk &#39;{print $1}&#39; /tmp/aurch-updates
+if  [[ $1 == -Luhq ]]; then
+    awk '{print $1}' /tmp/aurch-updates
     else
-    echo; echo &quot;${czm} Updates available:&quot;
+    echo; echo "${czm} Updates available:"
      column -t /tmp/aurch-updates
     echo
-    if    [[ -s  /tmp/aurch-updates-newer ]]; then
-        echo &quot; Newer than update:&quot;
+    if  [[ -s  /tmp/aurch-updates-newer ]]; then
+        echo " Newer than update:"
          column -t /tmp/aurch-updates-newer
         echo
     fi
 fi
+}
 </code></pre>
-        </article>
-    </body>
+  <script src="/usr/share/remarkable/media/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+  </script>
+ </body>
 </html>
