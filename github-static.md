@@ -1,54 +1,60 @@
-<body bgcolor="#002B36">
-<font color="#6E8992">
-## **Cody's Linux Blog Test Run**
-![alt text](/home/jeff/Evo-Lution-images/SC2015.png)
-Tried using jeykll on Arch Linux to make a static webpage for github pages (here). What a pain in the ass of version incompatibilities. Tell us what Linux distro to use github! Be easy enough to spin up a container with Debian, Centos, or whatever to work with jeykell, rather than spend the next week figuring this all out.
 
-Guess I'll have to learn Ruby for jekyll be a reasonably useful platform on Arch. If I was going to learn a second scripting language, python would be a more likely candidate, or how about skipping the scripting languages all together and move onto a compiled language. OK, I just want a damn static html page, and don't want to learn a new language to do it! Took me 10 g-dam years to be able to hack together a bash script, and that wasn't having to learn a scripting language, it was learning how to use linux, and writing it down! There has to be a simpler solution to this. So....
+# **Cody Learner**
+![https://github.com/Cody-Learner!](/home/jeff/doc5.png  "Examples")
 
-I'm trying the abricotine markdown editor as a test. Seems spell check is obviously not working, and we're getting off to a really bad start! The top menu disappeared as I was exploring settings for spell check, and this thing did the well known vim trap of, "fuck off newb" on me! I didn't have to pull the power cord this time, but I did have to delete the config directory, start a fresh instance, read the keyboard shortcuts, and apply them to the instance I was editing this on. So... 
+**Sunday, 19. December 2021**
 
-I'm off to check out alternatives that can spellcheck and don't have a vim trap built in! Or read a bit more about how to use abri-contin. I'll remember the name though the similarity to oxy-contin.<br>
+After a few years of using github and github.io for terminal screenshots and images, thought I'd look into taking advantage of the github.io to set up a static web page. 
 
-Seeme straight up markdown is going to work great for what I had in mind. Just need to find a markdown editor I get along with long term.
+I learned that jekyll seemed to be the go to tool for the job, so without hesitation, I dove into installing it without knowing anything about it.* After struggling with version incompatibilities, (github is only compatible with an older version than Arch has available in the official repos), I learned a markdown editor would suffice.
+ 
+Next I tried a few markdown editors and ended up settling on [remarkable](http://remarkableapp.github.io/linux.html) . I installed the git version from the AUR repos, [remarkable-git](https://aur.archlinux.org/packages/remarkable-git/) using my home grown AUR helper [aurch](https://github.com/Cody-Learner/aurch) to build and install it.
+
+Remarkable won me over with it's nice usable GUI layout, live preview, and page style options. It has a handful of style options built in, which include 'Github' and 'Metro Vibes Dark'. This means I can use it for both my github README markup and this page. I've struggled for years with the github README.md because I didn't want to use the right tool for the job, a markdown editor. Instead, I used my browser for 'after view' after posting it on github. This process usually ended with dozens of edits, going through the whole git and upload process each time an edit was needed, and burned up a bunch of time in the process.
+
+\* I've since learned there's an AUR version. I may look into that as well.
+
+<br>
 
 
-This is a bit of recent code I wrote for aurch, cause..., I want to see how code looks in the markdown. This bit of code checks the host for AUR updates.
- ```
-readarray -t aurpkgs < <(pacman -Sl ${REPONAME} 2>/dev/null | awk '{print $2,$3}' ; pacman -Qm )
-if	[[ $1 == -Luhq ]]; then	:
-    else
-	echo; echo "${czm} Checking for updates:"
-	printf '%s\n' "${aurpkgs[@]%' '*}" | nl | column -t
-fi
-	rm -f /tmp/aurch-updates /tmp/aurch-updates-newer
+This is a bit of recent code I recently wrote for aurch. This code checks the host for AUR updates. I'm posting it as a preview, so I can see how code looks in the markdown. I notice the original indentation is lost in the process. It replaces my preferential use of tabs with more common four spaces.
 
-for pkg in "${aurpkgs[@]}"; do {
-
-    	pckg="${pkg%' '*}"	
-	check=$(curl --compressed -s "https://aur.archlinux.org/rpc/?v=5\&type=info&arg\[\]=${pckg}" \
-		| jshon -e results -a -e  Version \
-		| awk -F\" '{print $2}')
-	compare=$(vercmp "${pkg#*' '}" "${check}")
-
-	if	[[ -n  ${check} && ${compare} == -1 ]]; then
-		echo "${pkg} -> ${check}" >>/tmp/aurch-updates
-    	elif	[[ -n  ${check} &&  ${compare} == 1 ]]; then
-    		echo "${pkg} <- ${check}" >>/tmp/aurch-updates-newer
-	fi } &
-
-done; wait
-
-if	[[ $1 == -Luhq ]]; then
-	awk '{print $1}' /tmp/aurch-updates
-    else
-	echo; echo "${czm} Updates available:"
-	 column -t /tmp/aurch-updates
-	echo
-	if	[[ -s  /tmp/aurch-updates-newer ]]; then
-		echo " Newer than update:"
-		 column -t /tmp/aurch-updates-newer
-		echo
+	check_host_updates(){
+	
+		readarray -t aurpkgs < <(pacman -Sl ${REPONAME} 2>/dev/null | awk '{print $2,$3}' ; pacman -Qm )
+	if	[[ $1 == -Luhq ]]; then	:
+	    else
+		echo; echo "${czm} Checking for updates:"
+		printf '%s\n' "${aurpkgs[@]%' '*}" | nl | column -t
 	fi
-fi
-```
+		rm -f /tmp/aurch-updates /tmp/aurch-updates-newer
+	
+	for pkg in "${aurpkgs[@]}"; do {
+	
+	    	pckg="${pkg%' '*}"	
+		check=$(curl --compressed -s "https://aur.archlinux.org/rpc/?v=5\&type=info&arg\[\]=${pckg}" \
+			| jshon -e results -a -e  Version \
+			| awk -F\" '{print $2}')
+		compare=$(vercmp "${pkg#*' '}" "${check}")
+	
+		if	[[ -n  ${check} && ${compare} == -1 ]]; then
+			echo "${pkg} -> ${check}" >>/tmp/aurch-updates
+	    	elif	[[ -n  ${check} &&  ${compare} == 1 ]]; then
+	    		echo "${pkg} <- ${check}" >>/tmp/aurch-updates-newer
+		fi } &
+	
+	done; wait
+	
+	if	[[ $1 == -Luhq ]]; then
+		awk '{print $1}' /tmp/aurch-updates
+	    else
+		echo; echo "${czm} Updates available:"
+		 column -t /tmp/aurch-updates
+		echo
+		if	[[ -s  /tmp/aurch-updates-newer ]]; then
+			echo " Newer than update:"
+			 column -t /tmp/aurch-updates-newer
+			echo
+		fi
+	fi
+	}
