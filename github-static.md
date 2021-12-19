@@ -1,6 +1,6 @@
 
 # **Cody Learner**
-![https://github.com/Cody-Learner!](/home/jeff/doc5.png  "Examples")
+![https://github.com/Cody-Learner!](doc5.png  "Examples")
 
 **Sunday, 19. December 2021**
 
