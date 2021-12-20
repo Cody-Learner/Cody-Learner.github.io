@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Made with Remarkable!
+  </title>
+  <link href="highlightjs.default.min.css" rel="stylesheet"/>
+  <style type="text/css">
+   h1,h2{border-bottom:1px solid}html a:hover,html pre{background-color:#073642}blockquote,body,h1,h2,h3,h4,h5,h6,html,img,li,ol,p,ul{margin:0;padding:0;font:inherit;vertical-align:baseline}img,ol,p,pre,ul{margin-bottom:20px}html *{font-family:ff-din-web-pro-1,ff-din-web-pro-2,sans-serif;font-size:16px;line-height:19.2px;color-profile:sRGB;color:#839496}body{margin:40px 70px}p{font-weight:lighter}strong{font-weight:700}ol,ul{margin-left:2em}ol ol,ol ul,ul ol,ul ul{margin-top:10px}li{margin-bottom:3px}h1,h2,h3,h4,h5,h6{font-weight:lighter;text-transform:capitalize;margin-top:20px;margin-bottom:10px}.hljs-strong,h1,mark{font-weight:700}h1,h2{font-size:24.62px;line-height:29.55px}h3{font-size:23.44px;line-height:28.13px}h4,h5,h6{font-size:22.16px;line-height:26.59px}h1 img,h2 img,h3 img,h4 img,h5 img,h6 img,p img{margin-bottom:0}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;padding:15px}code,pre{font-family:monospace}blockquote{border-left:4px solid;padding:0 15px}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:15px}h1{text-transform:uppercase}h3,h4,h5,h6{border-bottom:none}html body{background-color:#002b36}html h1,html h2,html h3,html h4,html h5,html h6{border-color:#839496}html pre{color:#93a1a1}html a,html a:active,html a:visited,html code.url,html h1,html h2,html h3,html h4,html h5,html h6{color:#b58900}@media print{body{margin:0}*{color:#000!important}}table{border-collapse:collapse}td,th{border:1px solid #839496;padding:.5rem;text-align:left}mark{background-color:#93a1a1;color:#000}.hljs{display:block;overflow-x:auto;padding:.5em;background:#002b36;color:#839496}.hljs-comment,.hljs-quote{color:#586e75}.hljs-addition,.hljs-keyword,.hljs-selector-tag{color:#859900}.hljs-doctag,.hljs-literal,.hljs-meta .hljs-meta-string,.hljs-number,.hljs-regexp,.hljs-string{color:#2aa198}.hljs-name,.hljs-section,.hljs-selector-class,.hljs-selector-id,.hljs-title{color:#268bd2}.hljs-attr,.hljs-attribute,.hljs-class .hljs-title,.hljs-template-variable,.hljs-type,.hljs-variable{color:#b58900}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-meta .hljs-keyword,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-subst,.hljs-symbol{color:#cb4b16}.hljs-built_in,.hljs-deletion{color:#dc322f}.hljs-formula{background:#073642}.hljs-emphasis{font-style:italic}
+  </style>
+ </head>
+ <body>
+  <h2>
+   Aurch
+  </h2>
+  <p>
+   <strong>
+    What is aurch:
+   </strong>
+   <br/>
+   Aurch is a bash script used to automate building and optionally installing AUR packages. It's standout feature is building packages 'from within' a chroot, not to be confused with building package 'in' a chroot. This is a feature none of  the currently popular AUR helpers have implemented.
+  </p>
+  <p>
+   Although very uncommon, it is not unheard of for AUR packages to contain intentionally malicious code, not to mention the more common unintentional errors that could potentially create issues.
+  </p>
+  <p>
+   Building packages from within a chroot mitigates any potential unwanted changes being made to the system during the build process. The build process when using aurch is performed isolated from the host, inside an nspawn container.
+  </p>
+  <p>
+   To be clear, an AUR package could be designed with malicious intent or otherwise unwanted features that could be implemented after installation  quite easily. Aurch prevents it 'during the build process'.
+  </p>
+  <p>
+   Expecting code review by the user for packages is actually quite unrealistic. More realistic would be verifying the source code downloaded to build a package is actually from the original source provided by the development. Checksums implemented in the PKGBUILD automate that step. That's if the PKGBUILD is built with integrity and has not been tampered with.
+  </p>
+  <p>
+   I've made an effort with aurch to prevent a tiny percentage of a potential breach of trust in a huge chain of trust on my systems. I'd like to share my efforts with anyone interested in using it.
+  </p>
+  <p>
+   <strong>
+    Intended user:
+   </strong>
+   <br/>
+   I made aurch to use on my personal systems. I cannot offer support or help other than passing on what I learn over time.
+  </p>
+  <p>
+   1) Anyone using an unvetted script from an unknown person, absolutely needs to be able to read the script to decipher what it's actually doing.
+  </p>
+  <p>
+   2) I'd advise anyone wanting to try or use aurch, to at least be able to troubleshoot and fix any package related issues on their systems without assistance. AUR packages can and will cause issues under the management of the best AUR helpers.
+  </p>
+  <p>
+   3) It'd be cool to see users with some shell scripting skills and understanding of Arch packages, to provide constructive feedback. I'd be glad to hear from you. Shoot me a message on the Arch reddit, u/Cody_Learner.
+  </p>
+  <p>
+   <strong>
+    Why no AUR package:
+   </strong>
+   <br/>
+   <em>
+    See intended user.
+   </em>
+   Mostly because I'm not able to, or do I want to support a potential large (or even small) number of users needing help. There's more, with this being the most prominent one I don't mind discussing.
+  </p>
+  <p>
+   <strong>
+    The future:
+   </strong>
+   <br/>
+   I'd like to eventually document a step by step user guide here. Explaining in detail the processes of setting up and using aurch, showing the commands used and the expected output.
+   <br/>
+  </p>
+  <script src="highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+  </script>
+ </body>
+</html>
